@@ -1,23 +1,18 @@
 package es.deusto.ingenieria.sd.eb.client.gui;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.rmi.RemoteException;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import es.deusto.ingenieria.sd.eb.client.controller.EasyBookingController;
 import es.deusto.ingenieria.sd.eb.server.data.Aeropuerto;
-import es.deusto.ingenieria.sd.eb.server.data.Persona;
 import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioDTO;
-import es.deusto.ingenieria.sd.eb.server.db.DBManager;
-
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.rmi.RemoteException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.awt.event.ActionEvent;
 
 public class Vuelos extends JFrame {
 

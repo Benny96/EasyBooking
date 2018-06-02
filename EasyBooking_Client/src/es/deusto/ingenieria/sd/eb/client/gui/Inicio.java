@@ -1,9 +1,5 @@
 package es.deusto.ingenieria.sd.eb.client.gui;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,6 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
 
 import es.deusto.ingenieria.sd.eb.client.controller.EasyBookingController;
 import es.deusto.ingenieria.sd.eb.server.data.dto.ReservaDTO;

@@ -21,7 +21,7 @@ import es.deusto.ingenieria.sd.eb.server.remote.UsuarioAdmin;
 public class EasyBookingManagerServer {
 	
 	public static void main(String[] args) {
-		if (args.length != 10) {
+		if (args.length != 14) {
 			System.exit(0);
 		}
 
@@ -34,8 +34,8 @@ public class EasyBookingManagerServer {
 
 		try {
 			
-			IGatewayPago resService = new PagoPayPal(args[4], Integer.parseInt(args[5]));
-			IGatewayAir airService = new AirToScreen(args[6], Integer.parseInt(args[7]));
+			IGatewayPago resService = new PagoPayPal(args[6], Integer.parseInt(args[7]));
+			IGatewayAir airService = new AirToScreen(args[8], Integer.parseInt(args[9]));
 			
 			
 			IReservaAdmin reservaAdminService = new ReservaAdmin(resService);			

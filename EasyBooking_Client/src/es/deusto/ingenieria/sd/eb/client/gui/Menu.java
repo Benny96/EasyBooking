@@ -3,11 +3,11 @@ package es.deusto.ingenieria.sd.eb.client.gui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JLabel;
-import javax.swing.JButton;
 
 import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioDTO;
 

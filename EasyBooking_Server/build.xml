@@ -110,19 +110,19 @@
         	<jvmarg value="-Djava.rmi.server.codebase=file:${build.dir}/"/>
 			<jvmarg value="-Djava.security.policy=${policy.file}"/>			
 			<jvmarg value="-Dlog4j.configuration=log4j.properties"/>
-        	<arg value="${server.IP}"/> 
+        	<arg value="${server.IP}"/>
 	 		<arg value="${server.port}"/>
 			<arg value="${server.UserAdmin}"/>
 			<arg value="${server.ReservaAdmin}"/>
-			<arg value="${PayCardServer.IP}"/> 
+			<arg value="${PayCardServer.IP}"/>
 			<arg value="${PayCardServer.port}"/>
-        	<arg value="${PayPalServer.IP}"/> 
+        	<arg value="${PayPalServer.IP}"/>
 	 		<arg value="${PayPalServer.port}"/>
-        	<arg value="${AirServer.IP}"/> 
+        	<arg value="${AirServer.IP}"/>
 	 		<arg value="${AirServer.port}"/>
-			<arg value="${GoogleAuthServer.IP}"/> 
+			<arg value="${GoogleAuthServer.IP}"/>
 			<arg value="${GoogleAuthServer.port}"/>
-			<arg value="${FBAuthServer.IP}"/> 
+			<arg value="${FBAuthServer.IP}"/>
 			<arg value="${FBAuthServer.port}"/>
         </java>
     </target>
