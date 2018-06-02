@@ -20,7 +20,7 @@ public class FBAuthenticationServer {
 			System.out.println(" - FBAuthenticationServer: Waiting for connections '" + tcpServerSocket.getInetAddress().getHostAddress() + ":" + tcpServerSocket.getLocalPort() + "' ...");
 			
 			while (true) {
-				new GoogleAuthenticationService(tcpServerSocket.accept());
+				new FBAuthenticationService(tcpServerSocket.accept());
 				System.out.println(" - FBAuthenticationServer: New client connection accepted. Client number: " + ++numClients);
 			}
 		} catch (IOException e) {

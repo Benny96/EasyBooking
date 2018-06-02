@@ -20,7 +20,7 @@ public class PayPalServer {
 			System.out.println(" - PayPalServer: Waiting for connections '" + tcpServerSocket.getInetAddress().getHostAddress() + ":" + tcpServerSocket.getLocalPort() + "' ...");
 			
 			while (true) {
-				new TarjetaService(tcpServerSocket.accept());
+				new PayPalService(tcpServerSocket.accept());
 				System.out.println(" - PayPalServer: New client connection accepted. Client number: " + ++numClients);
 			}
 		} catch (IOException e) {
