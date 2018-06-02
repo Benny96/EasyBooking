@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project basedir="." default="help" name="EasyBooking_SD_FBAuthServer">    
+<project basedir="." default="help" name="EasyBooking_FBAuthServer">    
 	<property environment="env"/>
 	<property name="source.dir" location="src"/>
    	<property name="build.dir" location="bin"/>
 	<property name="lib.dir" location="lib"/>
-	<property name="server.port" value="35700"/>
+	<property name="server.port" value="35800"/>
 
 	<path id="classpath">
         <fileset dir="${lib.dir}">

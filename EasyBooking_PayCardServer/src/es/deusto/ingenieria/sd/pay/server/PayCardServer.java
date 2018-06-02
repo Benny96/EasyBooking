@@ -3,7 +3,7 @@ package es.deusto.ingenieria.sd.pay.server;
 import java.io.IOException;
 import java.net.ServerSocket;
 
-public class TarjetaServer {
+public class PayCardServer {
 	
 	private static int numClients = 0;
 	
@@ -20,7 +20,7 @@ public class TarjetaServer {
 			System.out.println(" - TarjetaServer: Waiting for connections '" + tcpServerSocket.getInetAddress().getHostAddress() + ":" + tcpServerSocket.getLocalPort() + "' ...");
 			
 			while (true) {
-				new TarjetaService(tcpServerSocket.accept());
+				new PayCardService(tcpServerSocket.accept());
 				System.out.println(" - TarjetaServer: New client connection accepted. Client number: " + ++numClients);
 			}
 		} catch (IOException e) {

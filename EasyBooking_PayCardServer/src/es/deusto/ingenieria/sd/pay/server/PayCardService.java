@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 import com.memetix.mst.language.Language;
 import com.memetix.mst.translate.Translate;
 
-public class TarjetaService extends Thread {
+public class PayCardService extends Thread {
 	private DataInputStream in;
 	private DataOutputStream out;
 	private Socket tcpSocket;
@@ -19,7 +19,7 @@ public class TarjetaService extends Thread {
 	
 	private ArrayList<String> ejemplo;
 	
-	public TarjetaService(Socket socket) {
+	public PayCardService(Socket socket) {
 		ejemplo.add("IMANOL");
 		ejemplo.add("GARI");
 		try {

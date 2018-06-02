@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project basedir="." default="help" name="EasyBooking_SD_Server">    
+<project basedir="." default="help" name="EasyBooking_Server">    
 	<property environment="env"/>
 	<property name="source.dir" location="src"/>
    	<property name="build.dir" location="bin"/>
@@ -13,12 +13,16 @@
 	<property name="server.UserAdmin" value="useradmin"/>
 	<property name="server.ReservaAdmin" value="reservaadmin"/>
 	<property name="policy.file" location="security/java.policy"/>
-	<property name="PayServer.IP" value="127.0.0.1"/> 
-	<property name="PayServer.port" value="35500"/> 
+	<property name="PayCardServer.IP" value="127.0.0.1"/> 
+	<property name="PayCardServer.port" value="35400"/> 
+	<property name="PayPalServer.IP" value="127.0.0.1"/> 
+	<property name="PayPalServer.port" value="35500"/> 
 	<property name="AirServer.IP" value="127.0.0.1"/>
-	<property name="AirServer.port" value="35600"/>  
-	<property name="AuthServer.IP" value="127.0.0.1"/>
-	<property name="AuthServer.port" value="35700"/>
+	<property name="AirServer.port" value="35600"/>
+	<property name="GoogleAuthServer.IP" value="127.0.0.1"/>
+	<property name="GoogleAuthServer.port" value="35700"/>
+	<property name="FBAuthServer.IP" value="127.0.0.1"/>
+	<property name="FBAuthServer.port" value="35800"/>
 
 	<target name="help">
 		<echo>Usage: ant [build | export | server ]</echo>
@@ -109,13 +113,17 @@
         	<arg value="${server.IP}"/> 
 	 		<arg value="${server.port}"/>
 			<arg value="${server.UserAdmin}"/>
-			<arg value="${server.ReservaAdmin}"/> 
-        	<arg value="${PayServer.IP}"/> 
-	 		<arg value="${PayServer.port}"/>
+			<arg value="${server.ReservaAdmin}"/>
+			<arg value="${PayCardServer.IP}"/> 
+			<arg value="${PayCardServer.port}"/>
+        	<arg value="${PayPalServer.IP}"/> 
+	 		<arg value="${PayPalServer.port}"/>
         	<arg value="${AirServer.IP}"/> 
 	 		<arg value="${AirServer.port}"/>
-			<arg value="${AuthServer.IP}"/> 
-			<arg value="${AuthServer.port}"/>
+			<arg value="${GoogleAuthServer.IP}"/> 
+			<arg value="${GoogleAuthServer.port}"/>
+			<arg value="${FBAuthServer.IP}"/> 
+			<arg value="${FBAuthServer.port}"/>
         </java>
     </target>
 </project>
