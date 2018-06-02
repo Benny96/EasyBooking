@@ -17,7 +17,7 @@ public class FacebookAuth implements IGatewayAuth {
 		port = arg2;
 	}
 	@Override
-	public int darAltaUsuario(String correo){
+	public int darAltaUsuario(String correo) throws IOException {
 		// TODO Hacer Alta Usuario FB.
 		String data = null;
 		Socket socket;

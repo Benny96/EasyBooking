@@ -13,6 +13,7 @@ import es.deusto.ingenieria.sd.eb.server.gateway.PagoPayPal;
 import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayAir;
 import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayAuth;
 import es.deusto.ingenieria.sd.eb.server.gateway.AirToScreen;
+import es.deusto.ingenieria.sd.eb.server.gateway.FacebookAuth;
 import es.deusto.ingenieria.sd.eb.server.gateway.GoogleAuth;
 import es.deusto.ingenieria.sd.eb.server.remote.IReservaAdmin;
 import es.deusto.ingenieria.sd.eb.server.remote.IUsuarioAdmin;
@@ -40,14 +41,15 @@ public class EasyBookingManagerServer {
 			
 			IGatewayPago resService = new PagoPayPal(args[6], Integer.parseInt(args[7]));
 			IGatewayAir airService = new AirToScreen(args[8], Integer.parseInt(args[9]));
-			IGatewayAuth googleService = new GoogleAuth(args[10], Integer.parseInt(args[11]));
 			
+			IGatewayAuth googleService = new GoogleAuth(args[10], Integer.parseInt(args[11]));
+			IGatewayAuth facebookService = new FacebookAuth(args[12], Integer.parseInt(args[13]));
 			
 			IReservaAdmin reservaAdminService = new ReservaAdmin(resService);			
 			Naming.rebind(nameReserva, reservaAdminService);
 			System.out.println("* Reserva Admin Service '" + nameReserva + "' active and waiting...");
 			
-			IUsuarioAdmin usuarioAdminService = new UsuarioAdmin(googleService);
+			IUsuarioAdmin usuarioAdminService = new UsuarioAdmin(googleService, facebookService);
 			Naming.rebind(nameUsuario, usuarioAdminService);
 			System.out.println("* Usuario Admin Service '" + nameUsuario + "' active and waiting...");
 		} catch (Exception e) {

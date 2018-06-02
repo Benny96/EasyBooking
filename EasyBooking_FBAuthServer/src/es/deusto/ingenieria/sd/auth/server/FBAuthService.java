@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 import com.memetix.mst.language.Language;
 import com.memetix.mst.translate.Translate;
 
-public class GoogleAuthService extends Thread {
+public class FBAuthService extends Thread {
 	private DataInputStream in;
 	private DataOutputStream out;
 	private Socket tcpSocket;
@@ -20,11 +20,13 @@ public class GoogleAuthService extends Thread {
 	
 	private static String DELIMITER = "#";
 	
-	public GoogleAuthService(Socket socket) {
+	public FBAuthService(Socket socket) {
 		lista.add("IMANOL");
 		lista.add("ANNE");
-		lista.add("GARI");
+		//lista.add("GARI");
 		lista.add("BEÑAT");
+		lista.add("PEPITO");
+		lista.add("JON");
 		System.out.println("LLego1");
 		try {
 			this.tcpSocket = socket;
@@ -32,7 +34,7 @@ public class GoogleAuthService extends Thread {
 			this.out = new DataOutputStream(socket.getOutputStream());
 			this.start();
 		} catch (IOException e) {
-			System.err.println("# GoogleAuthService - TCPConnection IO error:" + e.getMessage());
+			System.err.println("# FBAuthService - TCPConnection IO error:" + e.getMessage());
 		}
 	}
 
@@ -41,19 +43,19 @@ public class GoogleAuthService extends Thread {
 			String data = this.in.readUTF();
 			int resultado;
 			System.out.println("LLego1");
-			System.out.println("   - GoogleAuthService - Received data from '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data + "'");					
+			System.out.println("   - FBAuthService - Received data from '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data + "'");					
 			resultado= this.verificar(data);
 			this.out.writeInt(resultado);					
-			System.out.println("   - GoogleAuthService - Sent data to '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data.toUpperCase() + "'");
+			System.out.println("   - FBAuthService - Sent data to '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data.toUpperCase() + "'");
 		} catch (EOFException e) {
-			System.err.println("   # GoogleAuthService - TCPConnection EOF error" + e.getMessage());
+			System.err.println("   # FBAuthService - TCPConnection EOF error" + e.getMessage());
 		} catch (IOException e) {
-			System.err.println("   # GoogleAuthService - TCPConnection IO error:" + e.getMessage());
+			System.err.println("   # FBAuthService - TCPConnection IO error:" + e.getMessage());
 		} finally {
 			try {
 				tcpSocket.close();
 			} catch (IOException e) {
-				System.err.println("   # GoogleAuthService - TCPConnection IO error:" + e.getMessage());
+				System.err.println("   # FBAuthService - TCPConnection IO error:" + e.getMessage());
 			}
 		}
 	}

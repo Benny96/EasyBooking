@@ -9,7 +9,7 @@ public class GoogleAuthServer {
 	
 	public static void main(String args[]) {
 		if (args.length < 1) {
-			System.err.println(" # Usage: GoogleAuthenticationServer [PORT]");
+			System.err.println(" # Usage: GoogleAuthServer [PORT]");
 			System.exit(1);
 		}
 		
@@ -17,14 +17,14 @@ public class GoogleAuthServer {
 		int serverPort = Integer.parseInt(args[0]);
 		
 		try (ServerSocket tcpServerSocket = new ServerSocket(serverPort);) {
-			System.out.println(" - GoogleAuthenticationServer: Waiting for connections '" + tcpServerSocket.getInetAddress().getHostAddress() + ":" + tcpServerSocket.getLocalPort() + "' ...");
+			System.out.println(" - GoogleAuthServer: Waiting for connections '" + tcpServerSocket.getInetAddress().getHostAddress() + ":" + tcpServerSocket.getLocalPort() + "' ...");
 			
 			while (true) {
 				new GoogleAuthService(tcpServerSocket.accept());
-				System.out.println(" - GoogleAuthenticationServer: New client connection accepted. Client number: " + ++numClients);
+				System.out.println(" - GoogleAuthServer: New client connection accepted. Client number: " + ++numClients);
 			}
 		} catch (IOException e) {
-			System.err.println("# GoogleAuthenticationServer: IO error:" + e.getMessage());
+			System.err.println("# GoogleAuthServer: IO error:" + e.getMessage());
 		}
 	}
 }

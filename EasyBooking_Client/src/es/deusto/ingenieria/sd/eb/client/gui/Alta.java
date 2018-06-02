@@ -61,16 +61,16 @@ public class Alta extends JFrame {
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		JButton btnRegistrarse = new JButton("Registrarse Google");
-		btnRegistrarse.setBounds(232, 334, 155, 29);
-		contentPane.add(btnRegistrarse);
-		btnRegistrarse.addActionListener(new ActionListener() {
+		JButton btnRegistrarseGoogle = new JButton("Registrarse Google+");
+		btnRegistrarseGoogle.setBounds(350, 334, 155, 29);
+		contentPane.add(btnRegistrarseGoogle);
+		btnRegistrarseGoogle.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
             	try {
             		//Añadir Strategy.
             		//TODO: Hacer llamada al Gateway. - Se hace internamente en el crearNuevoUsuario().
-					EasyBookingController.getInstance().crearNuevoUsuario(textField.getText());
+					EasyBookingController.getInstance().crearNuevoUsuarioGoogle(textField.getText());
 					myUser = new UsuarioDTO(textField.getText());
 					Menu m = new Menu(myUser);
 	                m.setVisible(true);
@@ -83,15 +83,15 @@ public class Alta extends JFrame {
             }
         });
 		
-		/*JButton btnRegistrarse = new JButton("Registrarse Google");
-		btnRegistrarse.setBounds(232, 334, 155, 29);
-		contentPane.add(btnRegistrarse);
-		btnRegistrarse.addActionListener(new ActionListener() {
+		JButton btnRegistrarseFacebook = new JButton("Registrarse Facebook");
+		btnRegistrarseFacebook.setBounds(100, 334, 155, 29);
+		contentPane.add(btnRegistrarseFacebook);
+		btnRegistrarseFacebook.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
             	try {
             		//TODO: Hacer llamada al Gateway.
-					EasyBookingController.getInstance().crearNuevoUsuario(textField.getText());
+					EasyBookingController.getInstance().crearNuevoUsuarioFacebook(textField.getText());
 					myUser = new UsuarioDTO(textField.getText());
 					Menu m = new Menu(myUser);
 	                m.setVisible(true);
@@ -102,6 +102,6 @@ public class Alta extends JFrame {
 					JOptionPane.showMessageDialog(alta, "Este usuario ya existe en la BD", "El usuario ya existe", JOptionPane.INFORMATION_MESSAGE);
 				}
             }
-        });*/
+        });
 	}
 }
