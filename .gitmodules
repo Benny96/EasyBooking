@@ -1,6 +1,0 @@
-[submodule "EasyBooking_Client"]
-	path = EasyBooking_Client
-	url = https://github.com/Benny96/EasyBooking_Client
-[submodule "EasyBooking_Server"]
-	path = EasyBooking_Server
-	url = https://github.com/Benny96/EasyBooking_Server
