@@ -80,6 +80,10 @@ public class Alta extends JFrame {
             	{
 					JOptionPane.showMessageDialog(alta, "Este usuario ya existe en la BD", "El usuario ya existe", JOptionPane.INFORMATION_MESSAGE);
 				}
+            	catch (NullPointerException e1)
+            	{
+            		JOptionPane.showMessageDialog(alta, "Este usuario no existe en Google+", "El usuario no existe", JOptionPane.INFORMATION_MESSAGE);
+            	}
             }
         });
 		
@@ -101,6 +105,10 @@ public class Alta extends JFrame {
             	{
 					JOptionPane.showMessageDialog(alta, "Este usuario ya existe en la BD", "El usuario ya existe", JOptionPane.INFORMATION_MESSAGE);
 				}
+            	catch (NullPointerException e1)
+            	{
+            		JOptionPane.showMessageDialog(alta, "Este usuario no existe en Facebook", "El usuario no existe", JOptionPane.INFORMATION_MESSAGE);
+            	}
             }
         });
 	}

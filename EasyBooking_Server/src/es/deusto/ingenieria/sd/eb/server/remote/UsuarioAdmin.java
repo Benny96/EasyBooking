@@ -1,6 +1,5 @@
 package es.deusto.ingenieria.sd.eb.server.remote;
 
-import java.io.IOException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
@@ -24,24 +23,21 @@ public class UsuarioAdmin extends UnicastRemoteObject implements IUsuarioAdmin
 	
 	//private Map<String, UsuarioDTO> usuarios = new TreeMap<String, UsuarioDTO>();
 
-	public UsuarioAdmin(IGatewayAuth gservice, IGatewayAuth fservice) throws RemoteException {
+	public UsuarioAdmin(IGatewayAuth gservice, IGatewayAuth fservice) throws RemoteException, NullPointerException {
 		super();
 		gatewayGoogle = gservice;
 		gatewayFacebook = fservice;
 	}
-	public synchronized void generarNuevoUsuarioGoogle (String email) throws RemoteException {
-		try 
+	public synchronized void generarNuevoUsuarioGoogle (String email) throws RemoteException, NullPointerException {
+		if (gatewayGoogle.darAltaUsuario(email)==0)
 		{
-			if (gatewayGoogle.darAltaUsuario(email)==0)
-			{
-				System.out.println("Este usuario existe en Google+. Se procederá a crear el usuario con el correo "+ email);
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			System.out.println("Este usuario no existe en Google+. - El usuario no se creará");
-			throw new RemoteException();
+			System.out.println("Este usuario existe en Google+. Se procederá a crear el usuario con el correo "+ email);
 		}
-		
+		else
+		{
+			System.out.println("Este usuario no existe en Google+. - El usuario no se creará");
+			throw new NullPointerException();
+		}
 		if (!(usuarios.containsKey(email)))
 		{
 			System.out.println("* Creando un nuevo usuario: " + email);
@@ -55,17 +51,15 @@ public class UsuarioAdmin extends UnicastRemoteObject implements IUsuarioAdmin
 			throw new RemoteException();
 		}
 	}
-	public synchronized void generarNuevoUsuarioFacebook (String email) throws RemoteException {
-		try 
+	public synchronized void generarNuevoUsuarioFacebook (String email) throws RemoteException, NullPointerException {
+		if (gatewayFacebook.darAltaUsuario(email)==0)
 		{
-			if (gatewayFacebook.darAltaUsuario(email)==0)
-			{
-				System.out.println("Este usuario existe en Facebook. Se procederá a crear el usuario con el correo "+ email);
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			System.out.println("Este usuario existe en Facebook. Se procederá a crear el usuario con el correo "+ email);
+		}
+		else
+		{
 			System.out.println("Este usuario no existe en Facebook. - El usuario no se creará");
-			throw new RemoteException();
+			throw new NullPointerException();
 		}
 		if (!(usuarios.containsKey(email)))
 		{

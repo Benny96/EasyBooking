@@ -72,11 +72,11 @@ public class EasyBookingController {
 		return usuarios;
 	}
 
-	public void crearNuevoUsuarioGoogle (String email) throws RemoteException {
+	public void crearNuevoUsuarioGoogle (String email) throws RemoteException, NullPointerException {
 			rsl.getUsuarioService().generarNuevoUsuarioGoogle(email);
 	}
 	
-	public void crearNuevoUsuarioFacebook (String email) throws RemoteException {
+	public void crearNuevoUsuarioFacebook (String email) throws RemoteException, NullPointerException {
 		rsl.getUsuarioService().generarNuevoUsuarioFacebook(email);
 	}
 

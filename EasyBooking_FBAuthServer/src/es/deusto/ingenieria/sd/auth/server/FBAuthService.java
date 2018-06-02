@@ -16,14 +16,11 @@ public class FBAuthService extends Thread {
 	private DataOutputStream out;
 	private Socket tcpSocket;
 
-	private ArrayList<String> lista;
-	
-	private static String DELIMITER = "#";
+	private ArrayList<String> lista = new ArrayList <String>();
 	
 	public FBAuthService(Socket socket) {
 		lista.add("IMANOL");
 		lista.add("ANNE");
-		//lista.add("GARI");
 		lista.add("BEÑAT");
 		lista.add("PEPITO");
 		lista.add("JON");
@@ -41,11 +38,10 @@ public class FBAuthService extends Thread {
 	public void run() {
 		try {
 			String data = this.in.readUTF();
-			int resultado;
 			System.out.println("LLego1");
 			System.out.println("   - FBAuthService - Received data from '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data + "'");					
-			resultado= this.verificar(data);
-			this.out.writeInt(resultado);					
+			data= Integer.toString(this.verificar(data));
+			this.out.writeUTF(data);					
 			System.out.println("   - FBAuthService - Sent data to '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data.toUpperCase() + "'");
 		} catch (EOFException e) {
 			System.err.println("   # FBAuthService - TCPConnection EOF error" + e.getMessage());
@@ -61,7 +57,7 @@ public class FBAuthService extends Thread {
 	}
 	
 	public int verificar(String msg) {
-		int existe=0;
+		int existe=-1;
 		System.out.println("LLego2");
 		for(String aux : lista)
 		{

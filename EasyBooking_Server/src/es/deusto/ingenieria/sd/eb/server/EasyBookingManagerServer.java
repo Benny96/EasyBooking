@@ -39,13 +39,13 @@ public class EasyBookingManagerServer {
 
 		try {
 			
-			IGatewayPago resService = new PagoPayPal(args[6], Integer.parseInt(args[7]));
-			IGatewayAir airService = new AirToScreen(args[8], Integer.parseInt(args[9]));
+			//IGatewayPago resService = new PagoPayPal(args[6], Integer.parseInt(args[7]));
+			//IGatewayAir airService = new AirToScreen(args[8], Integer.parseInt(args[9]));
 			
 			IGatewayAuth googleService = new GoogleAuth(args[10], Integer.parseInt(args[11]));
 			IGatewayAuth facebookService = new FacebookAuth(args[12], Integer.parseInt(args[13]));
 			
-			IReservaAdmin reservaAdminService = new ReservaAdmin(resService);			
+			IReservaAdmin reservaAdminService = new ReservaAdmin();			
 			Naming.rebind(nameReserva, reservaAdminService);
 			System.out.println("* Reserva Admin Service '" + nameReserva + "' active and waiting...");
 			

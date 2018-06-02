@@ -8,7 +8,7 @@ import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioDTO;
 
 public interface IUsuarioAdmin extends Remote {
 	public List<UsuarioDTO> getUsuariosDTO() throws RemoteException;
-	public void generarNuevoUsuarioGoogle (String email) throws RemoteException;
-	public void generarNuevoUsuarioFacebook (String email) throws RemoteException;
+	public void generarNuevoUsuarioGoogle (String email) throws RemoteException, NullPointerException;
+	public void generarNuevoUsuarioFacebook (String email) throws RemoteException, NullPointerException;
 	public void eliminarUsuario (String email) throws RemoteException;
 }

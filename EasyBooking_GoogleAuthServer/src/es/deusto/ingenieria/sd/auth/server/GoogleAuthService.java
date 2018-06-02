@@ -16,9 +16,7 @@ public class GoogleAuthService extends Thread {
 	private DataOutputStream out;
 	private Socket tcpSocket;
 
-	private ArrayList<String> lista;
-	
-	private static String DELIMITER = "#";
+	private ArrayList<String> lista = new ArrayList <String>();
 	
 	public GoogleAuthService(Socket socket) {
 		lista.add("IMANOL");
@@ -39,11 +37,10 @@ public class GoogleAuthService extends Thread {
 	public void run() {
 		try {
 			String data = this.in.readUTF();
-			int resultado;
 			System.out.println("LLego1");
 			System.out.println("   - GoogleAuthService - Received data from '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data + "'");					
-			resultado= this.verificar(data);
-			this.out.writeInt(resultado);					
+			data= Integer.toString(this.verificar(data));
+			this.out.writeUTF(data);					
 			System.out.println("   - GoogleAuthService - Sent data to '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data.toUpperCase() + "'");
 		} catch (EOFException e) {
 			System.err.println("   # GoogleAuthService - TCPConnection EOF error" + e.getMessage());
@@ -59,7 +56,7 @@ public class GoogleAuthService extends Thread {
 	}
 	
 	public int verificar(String msg) {
-		int existe=0;
+		int existe=-1;
 		System.out.println("LLego2");
 		for(String aux : lista)
 		{

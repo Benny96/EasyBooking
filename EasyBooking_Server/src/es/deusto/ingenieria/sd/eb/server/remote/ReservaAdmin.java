@@ -22,12 +22,12 @@ import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayPago;
 public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 	
 	private static final long serialVersionUID = 1L;
-	private IGatewayPago resService;
+	//private IGatewayPago resService;
 	private Map<Integer, Reserva> reservas = new TreeMap<Integer, Reserva>();
 	
-	public ReservaAdmin(IGatewayPago resService) throws RemoteException {
+	public ReservaAdmin() throws RemoteException {
 		super();
-		this.resService=resService;
+		//this.resService=resService;
 	}
 
 	@Override
