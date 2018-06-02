@@ -17,7 +17,7 @@ public class GoogleAuth implements IGatewayAuth {
 		port = arg2;
 	}
 	@Override
-	public int darAltaUsuario(String correo, String pass){
+	public int darAltaUsuario(String correo) throws IOException {
 		// TODO Hacer Alta Usuario Google.
 		String data = null;
 		Socket socket;
@@ -29,43 +29,17 @@ public class GoogleAuth implements IGatewayAuth {
 			in = new DataInputStream(socket.getInputStream());
 			out = new DataOutputStream(socket.getOutputStream());
 			out.writeUTF(correo.toUpperCase());
-			System.out.println("   - FacebookAuth - Sent data to '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort() + "' -> '" + data.toUpperCase() + "'");
+			System.out.println("   - GoogleAuth - Sent data to '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort() + "' -> '" + data.toUpperCase() + "'");
 			
 			//Read request from the client
 			resultado = in.readInt();	
-			System.out.println("   - FacebookAuth - Received data from '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort() + "' -> '" + data + "'");		
+			System.out.println("   - GoogleAuth - Received data from '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort() + "' -> '" + data + "'");		
 			socket.close();
 		}catch (EOFException e) {
-			System.err.println("   # UsuarioService - FacebookAuth - TCPConnection EOF error" + e.getMessage());
+			System.err.println("   # UsuarioService - GoogleAuth - TCPConnection EOF error" + e.getMessage());
 		}	
 		catch (IOException e1) {
-			System.err.println("   # UsuarioService - FacebookAuth - TCPConnection IO error:" + e1.getMessage());
-		}
-		return resultado;
-	}
-	public int logearUsuario(String correo, String pass){
-		// TODO Hacer Login Usuario Google.
-		String data = null;
-		Socket socket;
-		DataInputStream in = null;
-		DataOutputStream out = null;
-		int resultado=0;
-		try {
-			socket = new Socket(host, port);
-			in = new DataInputStream(socket.getInputStream());
-			out = new DataOutputStream(socket.getOutputStream());
-			out.writeUTF(correo.toUpperCase());
-			System.out.println("   - PagoPayPal - Sent data to '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort() + "' -> '" + data.toUpperCase() + "'");
-			
-			//Read request from the client
-			resultado = in.readInt();	
-			System.out.println("   - FacebookAuth - Received data from '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort() + "' -> '" + data + "'");		
-			socket.close();
-		}catch (EOFException e) {
-			System.err.println("   # UsuarioService - FacebookAuth - TCPConnection EOF error" + e.getMessage());
-		}	
-		catch (IOException e1) {
-			System.err.println("   # UsuarioService - FacebookAuth - TCPConnection IO error:" + e1.getMessage());
+			System.err.println("   # UsuarioService - GoogleAuth - TCPConnection IO error:" + e1.getMessage());
 		}
 		return resultado;
 	}

@@ -1,5 +1,6 @@
 package es.deusto.ingenieria.sd.eb.server.remote;
 
+import java.io.IOException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
@@ -12,23 +13,38 @@ import es.deusto.ingenieria.sd.eb.server.data.Usuario;
 import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioAssembler;
 import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioDTO;
 import es.deusto.ingenieria.sd.eb.server.db.DBManager;
+import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayAuth;
 
 public class UsuarioAdmin extends UnicastRemoteObject implements IUsuarioAdmin
 {
 	private static final long serialVersionUID = 1L;
 	private Map<String, Usuario> usuarios = new TreeMap<String, Usuario>();
+	private IGatewayAuth gatewayGoogle;
 	
 	//private Map<String, UsuarioDTO> usuarios = new TreeMap<String, UsuarioDTO>();
 
-	public UsuarioAdmin() throws RemoteException {
+	public UsuarioAdmin(IGatewayAuth gservice) throws RemoteException {
 		super();
-		/*usuarios.put("benat@galdos.com", new Usuario("benat@galdos.com", "BG"));
-		usuarios.put("imanol@echeverria.com", new Usuario("imanol@echeverria.com", "IE"));
-		usuarios.put("gari@bereciartua.com", new Usuario("gari@bereciartua.com", "GB"));
-		usuarios.put("anne@idigoras.com", new Usuario("anne@idigoras.com", "AI"));*/
+		gatewayGoogle = gservice;
 	}
 	public synchronized void generarNuevoUsuario (String email) throws RemoteException {
 		//TODO: Hacer llamada a Gateway Facebook o Google.
+		try 
+		{
+			if (gatewayGoogle.darAltaUsuario(email)==0)
+			{
+				System.out.println("Este usuario existe en Google+. Se procederá a crear el usuario con el correo "+ email);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Este usuario no existe en Google+. - El usuario no se creará");
+			throw new RemoteException();
+		}
+		//TODO: Escribir análogo para Facebook.
+		/*if (gatewayGoogle.darAltaUsuario(email)==0)
+		{
+			System.out.println("Este usuario existe en Google+. Se procederá a crear el usuario con el correo "+ email);
+		}*/
 		if (!(usuarios.containsKey(email)))
 		{
 			System.out.println("* Creando un nuevo usuario: " + email);

@@ -11,7 +11,9 @@ import javax.jdo.Transaction;
 import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayPago;
 import es.deusto.ingenieria.sd.eb.server.gateway.PagoPayPal;
 import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayAir;
+import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayAuth;
 import es.deusto.ingenieria.sd.eb.server.gateway.AirToScreen;
+import es.deusto.ingenieria.sd.eb.server.gateway.GoogleAuth;
 import es.deusto.ingenieria.sd.eb.server.remote.IReservaAdmin;
 import es.deusto.ingenieria.sd.eb.server.remote.IUsuarioAdmin;
 import es.deusto.ingenieria.sd.eb.server.remote.ReservaAdmin;
@@ -29,24 +31,27 @@ public class EasyBookingManagerServer {
 			System.setSecurityManager(new RMISecurityManager());
 		}
 
-		String nameAdmin = "//" + args[0] + ":" + args[1] + "/" + args[2];
-		String nameReceiver = "//" + args[0] + ":" + args[1] + "/" + args[3];
+		String nameReserva = "//" + args[0] + ":" + args[1] + "/" + args[2];
+		String nameUsuario = "//" + args[0] + ":" + args[1] + "/" + args[3];
+		
+		
 
 		try {
 			
 			IGatewayPago resService = new PagoPayPal(args[6], Integer.parseInt(args[7]));
 			IGatewayAir airService = new AirToScreen(args[8], Integer.parseInt(args[9]));
+			IGatewayAuth googleService = new GoogleAuth(args[10], Integer.parseInt(args[11]));
 			
 			
 			IReservaAdmin reservaAdminService = new ReservaAdmin(resService);			
-			Naming.rebind(nameAdmin, reservaAdminService);
-			System.out.println("* Reserva Admin Service '" + nameAdmin + "' active and waiting...");
+			Naming.rebind(nameReserva, reservaAdminService);
+			System.out.println("* Reserva Admin Service '" + nameReserva + "' active and waiting...");
 			
-			IUsuarioAdmin usuarioAdminService = new UsuarioAdmin();
-			Naming.rebind(nameReceiver, usuarioAdminService);
-			System.out.println("* Reserva Admin Service '" + nameReceiver + "' active and waiting...");
+			IUsuarioAdmin usuarioAdminService = new UsuarioAdmin(googleService);
+			Naming.rebind(nameUsuario, usuarioAdminService);
+			System.out.println("* Usuario Admin Service '" + nameUsuario + "' active and waiting...");
 		} catch (Exception e) {
-			System.err.println("$ ReservaManager exception: " + e.getMessage());
+			System.err.println("$ UsuarioManager exception: " + e.getMessage());
 			e.printStackTrace();
 		}
 		

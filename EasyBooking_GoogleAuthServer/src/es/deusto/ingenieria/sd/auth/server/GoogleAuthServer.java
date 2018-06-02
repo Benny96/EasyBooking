@@ -3,7 +3,7 @@ package es.deusto.ingenieria.sd.auth.server;
 import java.io.IOException;
 import java.net.ServerSocket;
 
-public class GoogleAuthenticationServer {
+public class GoogleAuthServer {
 	
 	private static int numClients = 0;
 	
@@ -20,7 +20,7 @@ public class GoogleAuthenticationServer {
 			System.out.println(" - GoogleAuthenticationServer: Waiting for connections '" + tcpServerSocket.getInetAddress().getHostAddress() + ":" + tcpServerSocket.getLocalPort() + "' ...");
 			
 			while (true) {
-				new GoogleAuthenticationService(tcpServerSocket.accept());
+				new GoogleAuthService(tcpServerSocket.accept());
 				System.out.println(" - GoogleAuthenticationServer: New client connection accepted. Client number: " + ++numClients);
 			}
 		} catch (IOException e) {

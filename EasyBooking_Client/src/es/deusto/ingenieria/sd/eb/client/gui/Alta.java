@@ -24,6 +24,8 @@ public class Alta extends JFrame {
 	private JTextField textField_1;
 	private JFrame alta;
 	
+	private int authGoogle = -1;
+	
 	UsuarioDTO myUser=null;
 	
 
@@ -59,7 +61,29 @@ public class Alta extends JFrame {
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		JButton btnRegistrarse = new JButton("Registrarse");
+		JButton btnRegistrarse = new JButton("Registrarse Google");
+		btnRegistrarse.setBounds(232, 334, 155, 29);
+		contentPane.add(btnRegistrarse);
+		btnRegistrarse.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            	try {
+            		//Añadir Strategy.
+            		//TODO: Hacer llamada al Gateway. - Se hace internamente en el crearNuevoUsuario().
+					EasyBookingController.getInstance().crearNuevoUsuario(textField.getText());
+					myUser = new UsuarioDTO(textField.getText());
+					Menu m = new Menu(myUser);
+	                m.setVisible(true);
+	                dispose();
+				} 
+            	catch (RemoteException e1) 
+            	{
+					JOptionPane.showMessageDialog(alta, "Este usuario ya existe en la BD", "El usuario ya existe", JOptionPane.INFORMATION_MESSAGE);
+				}
+            }
+        });
+		
+		/*JButton btnRegistrarse = new JButton("Registrarse Google");
 		btnRegistrarse.setBounds(232, 334, 155, 29);
 		contentPane.add(btnRegistrarse);
 		btnRegistrarse.addActionListener(new ActionListener() {
@@ -78,6 +102,6 @@ public class Alta extends JFrame {
 					JOptionPane.showMessageDialog(alta, "Este usuario ya existe en la BD", "El usuario ya existe", JOptionPane.INFORMATION_MESSAGE);
 				}
             }
-        });
+        });*/
 	}
 }
