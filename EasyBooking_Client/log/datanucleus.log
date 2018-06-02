@@ -1,0 +1,1255 @@
+25-05-18_12:57:44 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+25-05-18_12:57:44 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_12:57:44 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_12:57:44 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_12:57:44 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_12:57:44 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_12:57:44 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_12:57:44 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_12:57:44 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_12:57:44 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_12:57:44 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_12:57:44 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_12:57:45 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_12:57:45 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+25-05-18_12:57:45 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+25-05-18_12:57:45 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+25-05-18_12:57:45 (main) ERROR [DataNucleus.MetaData] - Habia un error leyendo los ficheros. Por favor lee el LOG para obtener mas información. Lo siguiente puede ayudar : Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+org.datanucleus.exceptions.NucleusUserException: Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1378)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Caused by: org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	... 3 more
+Nested Throwables StackTrace:
+Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+25-05-18_12:59:21 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+25-05-18_12:59:21 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_12:59:21 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_12:59:21 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_12:59:21 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_12:59:21 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_12:59:21 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_12:59:21 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_12:59:21 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_12:59:21 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_12:59:21 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_12:59:21 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_12:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_12:59:22 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+25-05-18_12:59:22 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+25-05-18_12:59:22 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+25-05-18_12:59:22 (main) ERROR [DataNucleus.MetaData] - Habia un error leyendo los ficheros. Por favor lee el LOG para obtener mas información. Lo siguiente puede ayudar : Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+org.datanucleus.exceptions.NucleusUserException: Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1378)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Caused by: org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	... 3 more
+Nested Throwables StackTrace:
+Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+25-05-18_12:59:28 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_12:59:28 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_12:59:28 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_12:59:28 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_12:59:28 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_12:59:28 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+25-05-18_12:59:28 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_12:59:28 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_12:59:28 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_12:59:28 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_12:59:28 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_12:59:28 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_12:59:28 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_12:59:28 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_12:59:28 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_12:59:28 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_12:59:29 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_12:59:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_12:59:31 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_13:01:51 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_13:01:51 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_13:01:57 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+25-05-18_13:01:57 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_13:01:57 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_13:01:57 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_13:01:57 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_13:01:57 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_13:01:57 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_13:01:57 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_13:01:57 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_13:01:57 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_13:01:57 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_13:01:57 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_13:01:58 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_13:02:01 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_13:02:01 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_13:02:01 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_13:02:01 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_13:02:01 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_13:02:01 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+25-05-18_13:02:01 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_13:02:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_13:02:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_13:02:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_13:02:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_13:02:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_13:02:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_13:02:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_13:02:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_13:02:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_13:02:01 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_13:02:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_13:02:03 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_13:02:06 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_13:02:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_13:02:07 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_13:02:25 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_13:02:25 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_13:02:25 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_13:02:25 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_13:02:25 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_13:02:25 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+25-05-18_13:02:25 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_13:02:25 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_13:02:25 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_13:02:25 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_13:02:25 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_13:02:25 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_13:02:25 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_13:02:25 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_13:02:25 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_13:02:25 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_13:02:25 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_13:02:26 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_13:02:27 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_13:02:36 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_13:02:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_13:02:37 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_13:04:10 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_13:04:10 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_13:04:10 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_13:04:10 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_13:04:10 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_13:04:10 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+25-05-18_13:04:10 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_13:04:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_13:04:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_13:04:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_13:04:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_13:04:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_13:04:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_13:04:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_13:04:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_13:04:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_13:04:10 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_13:04:11 (main) ERROR [DataNucleus.Datastore.Schema] - La inicialización del base de datos ha fallado.
+Unknown database 'easybookingdb'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'easybookingdb'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:626)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Nested Throwables StackTrace:
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:626)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+25-05-18_13:04:11 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Unknown database 'easybookingdb'
+25-05-18_13:04:11 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+Unknown database 'easybookingdb'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'easybookingdb'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:626)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Nested Throwables StackTrace:
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:626)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+25-05-18_13:05:04 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_13:05:04 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_13:05:04 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_13:05:04 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_13:05:04 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_13:05:04 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+25-05-18_13:05:04 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_13:05:04 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_13:05:04 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_13:05:04 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_13:05:04 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_13:05:04 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_13:05:04 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_13:05:04 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_13:05:04 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_13:05:04 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_13:05:04 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_13:05:04 (main) ERROR [DataNucleus.Datastore.Schema] - La inicialización del base de datos ha fallado.
+Unknown database 'easybookingdb'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'easybookingdb'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:626)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Nested Throwables StackTrace:
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:626)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+25-05-18_13:05:04 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Unknown database 'easybookingdb'
+25-05-18_13:05:04 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+Unknown database 'easybookingdb'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'easybookingdb'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:626)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Nested Throwables StackTrace:
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:626)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+25-05-18_13:06:22 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_13:06:22 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_13:06:22 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_13:06:22 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_13:06:22 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_13:06:22 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+25-05-18_13:06:22 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_13:06:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_13:06:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_13:06:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_13:06:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_13:06:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_13:06:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_13:06:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_13:06:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_13:06:22 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_13:06:22 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_13:06:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_13:06:24 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_13:06:33 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+25-05-18_13:06:33 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_13:06:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_13:06:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_13:06:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_13:06:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_13:06:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_13:06:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_13:06:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_13:06:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_13:06:33 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_13:06:34 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_13:06:34 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_13:12:38 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_13:12:38 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_13:12:38 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_13:12:38 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_13:12:38 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_13:15:26 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_13:15:27 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_13:15:27 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_13:15:27 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_13:15:27 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_13:17:59 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_13:18:00 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_13:18:00 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_13:18:00 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_13:18:00 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_13:37:56 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_13:37:56 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_13:37:56 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_13:37:56 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_13:37:56 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_13:40:30 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_13:40:31 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_13:40:31 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_13:40:31 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_13:40:31 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_16:46:14 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_16:46:14 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_16:46:14 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_16:46:14 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_16:46:14 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_16:46:14 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+25-05-18_16:46:14 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_16:46:14 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_16:46:14 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_16:46:14 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_16:46:14 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_16:46:14 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_16:46:14 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_16:46:14 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_16:46:14 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_16:46:14 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_16:46:14 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\db\DBManager.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_16:46:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_16:46:16 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_17:02:12 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+25-05-18_17:02:12 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_17:02:12 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_17:02:12 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_17:02:12 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_17:02:12 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_17:02:12 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_17:02:12 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_17:02:12 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_17:02:12 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_17:02:12 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_17:02:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\db\DBManager.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_17:02:13 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_17:02:13 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+25-05-18_17:02:13 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+25-05-18_17:02:13 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+25-05-18_17:02:13 (main) ERROR [DataNucleus.MetaData] - Habia un error leyendo los ficheros. Por favor lee el LOG para obtener mas información. Lo siguiente puede ayudar : Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+org.datanucleus.exceptions.NucleusUserException: Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1378)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Caused by: org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	... 3 more
+Nested Throwables StackTrace:
+Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Reserva pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Persona pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase es.deusto.ingenieria.sd.eb.server.data.Usuario pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2749)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2684)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1367)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:643)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:780)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+25-05-18_17:03:09 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_17:03:10 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_17:03:10 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_17:03:10 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_17:03:10 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_17:03:10 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\db\DBManager.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_17:03:10 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_17:03:11 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_17:03:23 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_17:03:23 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_17:03:23 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_17:03:23 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_17:03:23 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_17:03:23 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+25-05-18_17:03:23 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_17:03:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_17:03:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_17:03:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_17:03:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_17:03:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_17:03:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_17:03:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_17:03:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_17:03:23 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_17:03:23 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\db\DBManager.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_17:03:24 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_17:03:25 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+25-05-18_17:16:49 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+25-05-18_17:16:49 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+25-05-18_17:16:49 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+25-05-18_17:16:49 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+25-05-18_17:16:50 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-api-jdo-5.1.2.jar
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-cache-5.1.0-release.jar
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-core-5.1.2.jar
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\datanucleus-rdbms-5.1.2.jar
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\javax.jdo-3.2.0-m7.jar
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\log4j-1.2.14.jar
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\lib\mysql-connector-java-5.1.44.jar
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\resources
+25-05-18_17:16:50 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva_Persona.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\db\DBManager.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+25-05-18_17:16:50 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking_Server\4.2_SMS-RF_AS_DTO_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+25-05-18_17:16:52 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
