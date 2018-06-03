@@ -11,13 +11,17 @@ import java.util.Map.Entry;
 
 import es.deusto.ingenieria.sd.eb.server.data.Reserva;
 import es.deusto.ingenieria.sd.eb.server.data.Usuario;
+import es.deusto.ingenieria.sd.eb.server.data.Aeropuerto;
 import es.deusto.ingenieria.sd.eb.server.data.Persona;
+import es.deusto.ingenieria.sd.eb.server.data.dto.AeropuertoAssembler;
+import es.deusto.ingenieria.sd.eb.server.data.dto.AeropuertoDTO;
 import es.deusto.ingenieria.sd.eb.server.data.dto.PersonaDTO;
 import es.deusto.ingenieria.sd.eb.server.data.dto.ReservaAssembler;
 import es.deusto.ingenieria.sd.eb.server.data.dto.ReservaDTO;
 import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioAssembler;
 import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioDTO;
 import es.deusto.ingenieria.sd.eb.server.db.DBManager;
+import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayAir;
 import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayPago;
 
 public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
@@ -25,12 +29,14 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 	private static final long serialVersionUID = 1L;
 	private IGatewayPago resTarjetaService;
 	private IGatewayPago resPayPalService;
+	private IGatewayAir resAirSocketService;
 	private Map<Integer, Reserva> reservas = new TreeMap<Integer, Reserva>();
 	
-	public ReservaAdmin(IGatewayPago resTService, IGatewayPago resPPService) throws RemoteException {
+	public ReservaAdmin(IGatewayPago resTService, IGatewayPago resPPService, IGatewayAir resSAService) throws RemoteException {
 		super();
 		this.resTarjetaService=resTService;
 		this.resPayPalService=resPPService;
+		this.resAirSocketService=resSAService;
 	}
 
 	@Override
@@ -133,6 +139,18 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 			personas.add(new Persona(aux.getPasaporte(), aux.getNombre(), aux.getApellido1(), aux.getApellido2()));
 			}
 		return personas;
+	}
+	
+	@Override
+	public List<AeropuertoDTO> getAeropuertosSocketDTO() throws RemoteException {
+		List<AeropuertoDTO> aeropuertos = new ArrayList<AeropuertoDTO>();
+		AeropuertoAssembler assembler = new AeropuertoAssembler();
+		aeropuertos = assembler.assemble(getAeropuertosSocket());
+		return aeropuertos;
+	}
+	
+	public synchronized List<Aeropuerto> getAeropuertosSocket() {
+		return resAirSocketService.buscarVuelos();
 	}
 
 	@Override

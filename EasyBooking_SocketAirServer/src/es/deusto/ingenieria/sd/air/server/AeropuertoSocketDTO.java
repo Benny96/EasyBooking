@@ -2,14 +2,13 @@ package es.deusto.ingenieria.sd.air.server;
 
 import java.io.Serializable;
 
-public class Aeropuerto implements Serializable{
+public class AeropuertoSocketDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private String Nombre;
 	private String Codigo;
 	
-	
-    public Aeropuerto(String nombre, String codigo) {
+    public AeropuertoSocketDTO(String codigo, String nombre) {
 		super();
 		Nombre = nombre;
 		Codigo = codigo;

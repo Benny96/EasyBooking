@@ -4,6 +4,8 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.EOFException;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Date;
@@ -21,24 +23,35 @@ public class AirToScreen implements IGatewayAir {
 		port = arg2;
 	}
 	@Override
-	public ArrayList <Aeropuerto> buscarVuelos(String cod_aero_or, String cod_aero_dest, Date fecha) {
+	public ArrayList <Aeropuerto> buscarVuelos() {
 		// TODO Auto-generated method stub
 		//Recoger String con formato previo a traducir
 		//Devolver el String con el formato adecuado
-		ArrayList<Aeropuerto> data = null;
+		ArrayList<Aeropuerto> data = new ArrayList<Aeropuerto>();
 		Socket socket;
+		//ObjectOutputStream out = null;
+		//ObjectInputStream in = null;
 		DataInputStream in = null;
 		DataOutputStream out = null;
+		Aeropuerto aux = null;
+		int numdatos = -1;
 		try {
 			socket = new Socket(host, port);
 			in = new DataInputStream(socket.getInputStream());
 			out = new DataOutputStream(socket.getOutputStream());
-			out.writeUTF(cod_aero_or.toUpperCase());
-			System.out.println("   - AirToScreen - Sent data to '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort() + "' -> '" + cod_aero_or.toUpperCase() + "'");
 			
+		
+			System.out.println("   - AirToScreen - Sent request to '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort());
+			
+			numdatos = in.readInt();
 			//Read request from the client
 			//TODO: Cambiar la lectura de aeropuertos.
-			//data = in.readUTF();			
+			//data = in.readUTF();
+			for (int i = 0; i < numdatos; i++)
+			{
+				aux = new Aeropuerto(in.readUTF(),in.readUTF());
+				data.add(aux);
+			}
 			System.out.println("   - AirToScreen - Received data from '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort() + "' -> '" + data + "'");		
 			socket.close();
 		}catch (EOFException e) {

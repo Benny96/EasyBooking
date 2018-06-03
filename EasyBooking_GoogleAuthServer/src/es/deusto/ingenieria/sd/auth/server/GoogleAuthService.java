@@ -6,10 +6,6 @@ import java.io.EOFException;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.StringTokenizer;
-
-import com.memetix.mst.language.Language;
-import com.memetix.mst.translate.Translate;
 
 public class GoogleAuthService extends Thread {
 	private DataInputStream in;

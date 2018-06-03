@@ -15,6 +15,7 @@ import javax.swing.border.EmptyBorder;
 import es.deusto.ingenieria.sd.airmi.server.data.dto.RMIAeropuertoDTO;
 import es.deusto.ingenieria.sd.eb.client.controller.EasyBookingController;
 import es.deusto.ingenieria.sd.eb.server.data.Aeropuerto;
+import es.deusto.ingenieria.sd.eb.server.data.dto.AeropuertoDTO;
 import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioDTO;
 
 public class Vuelos extends JFrame {
@@ -25,6 +26,7 @@ public class Vuelos extends JFrame {
 	
 	private int numreservas;
 	private List<RMIAeropuertoDTO> aeropuertosRMI = new ArrayList<RMIAeropuertoDTO>();
+	private List<AeropuertoDTO> aeropuertosSocket = new ArrayList<AeropuertoDTO>();
 	
 	private ArrayList <Aeropuerto> misaeropuertos = new ArrayList<Aeropuerto>();
 	
@@ -41,7 +43,18 @@ public class Vuelos extends JFrame {
 		{
 			misaeropuertos.add(new Aeropuerto(aeropuertosRMI.get(i).getCodigo(), aeropuertosRMI.get(i).getNombre()));
 		}
-		
+		try 
+		{
+			aeropuertosSocket = EasyBookingController.getInstance().getSocketAeropuertos();
+		} catch (RemoteException e1) 
+		{
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		for (int i = 0; i < aeropuertosSocket.size(); i++)
+		{
+			misaeropuertos.add(new Aeropuerto(aeropuertosSocket.get(i).getCodigo(), aeropuertosSocket.get(i).getNombre()));
+		}
 		//pasajeros.add("Pepita");
 		//pasajeros.add("Juanito");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -51,17 +64,21 @@ public class Vuelos extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblVuelo = new JLabel(misaeropuertos.get(0).getNombre());
+		JLabel lblVuelo = new JLabel("VUELO RMI1: "+ misaeropuertos.get(0).getNombre());
 		lblVuelo.setBounds(39, 60, 204, 20);
 		contentPane.add(lblVuelo);
 		
-		JLabel lblVuelo_1 = new JLabel(misaeropuertos.get(1).getNombre());
+		JLabel lblVuelo_1 = new JLabel("VUELO RMI2: "+ misaeropuertos.get(1).getNombre());
 		lblVuelo_1.setBounds(39, 110, 240, 20);
 		contentPane.add(lblVuelo_1);
 		
-		JLabel lblVuelo_2 = new JLabel(misaeropuertos.get(2).getNombre());
+		JLabel lblVuelo_2 = new JLabel("VUELO RMI3: "+ misaeropuertos.get(2).getNombre());
 		lblVuelo_2.setBounds(39, 155, 240, 20);
 		contentPane.add(lblVuelo_2);
+		
+		JLabel lblVuelo_3 = new JLabel("VUELO Socket: "+ misaeropuertos.get(3).getNombre());
+		lblVuelo_3.setBounds(39, 200, 240, 20);
+		contentPane.add(lblVuelo_3);
 		
 		JButton btnReservarVuelo = new JButton("Reservar vuelo 1");
 		btnReservarVuelo.setBounds(336, 56, 178, 29);

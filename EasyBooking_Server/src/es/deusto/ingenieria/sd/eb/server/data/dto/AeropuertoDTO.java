@@ -1,11 +1,14 @@
-package es.deusto.ingenieria.sd.eb.server.data;
+package es.deusto.ingenieria.sd.eb.server.data.dto;
 
-public class Aeropuerto {
-	
+import java.io.Serializable;
+
+public class AeropuertoDTO implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private String Codigo;
 	private String Nombre;
 	
-    public Aeropuerto(String codigo, String nombre) {
+    public AeropuertoDTO(String codigo, String nombre) {
 		super();
 		Codigo = codigo;
 		Nombre = nombre;	

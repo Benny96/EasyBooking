@@ -8,6 +8,7 @@ import java.util.List;
 import es.deusto.ingenieria.sd.airmi.server.data.dto.RMIAeropuertoDTO;
 import es.deusto.ingenieria.sd.eb.client.gui.Inicio;
 import es.deusto.ingenieria.sd.eb.client.remote.RMIServiceLocator;
+import es.deusto.ingenieria.sd.eb.server.data.dto.AeropuertoDTO;
 import es.deusto.ingenieria.sd.eb.server.data.dto.PersonaDTO;
 import es.deusto.ingenieria.sd.eb.server.data.dto.ReservaDTO;
 import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioDTO;
@@ -74,7 +75,7 @@ public class EasyBookingController {
 	}
 
 	public void crearNuevoUsuarioGoogle (String email) throws RemoteException, NullPointerException {
-			rsl.getUsuarioService().generarNuevoUsuarioGoogle(email);
+		rsl.getUsuarioService().generarNuevoUsuarioGoogle(email);
 	}
 	
 	public void crearNuevoUsuarioFacebook (String email) throws RemoteException, NullPointerException {
@@ -91,6 +92,10 @@ public class EasyBookingController {
 			e.printStackTrace();
 		}
 		return aeropuertos;
+	}
+	
+	public List<AeropuertoDTO> getSocketAeropuertos() throws RemoteException {
+		return rsl.getReservaService().getAeropuertosSocketDTO();
 	}
 
 	public void eliminarUsuario (String email) {
