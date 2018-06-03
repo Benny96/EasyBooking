@@ -3,12 +3,14 @@ package es.deusto.ingenieria.sd.eb.client.gui;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
@@ -21,13 +23,14 @@ public class Login extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField textField;
+	private boolean flag = false;
+	private JFrame ventana;
 	
 	private List<UsuarioDTO> usuarioDTO = new ArrayList<UsuarioDTO>();
 	
-	public Login() {
-		
-		initialUsuarioListLoad(EasyBookingController.getInstance().getUsuarios());
-		
+	public Login() 
+	{
+		ventana = this;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 652, 467);
 		contentPane = new JPanel();
@@ -60,22 +63,22 @@ public class Login extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) 
             {
-                for (int i = 0; i < usuarioDTO.size(); i++)
+                try 
                 {
-                	comprobarUsuario(EasyBookingController.getInstance().getUsuarios());
-                }
+					flag = comprobarUsuario(EasyBookingController.getInstance().getUsuarios());
+					if (!flag)
+					{
+						JOptionPane.showMessageDialog(ventana, "No hay usuarios que concuerden con esa credencial. Inténtelo otra vez.");
+					}
+				} 
+                catch (RemoteException e1) 
+                {
+					e1.printStackTrace();
+				}
             }
         });
 	}
-	
-	private void initialUsuarioListLoad(List<UsuarioDTO> usu) {
-		usuarioDTO = usu;
-		for (int i = 0; i < usuarioDTO.size(); i++) 
-		{
-			System.out.println(usu.get(i).getEmail());
-		}
-	}
-	private void comprobarUsuario(List<UsuarioDTO> usu)
+	private boolean comprobarUsuario(List<UsuarioDTO> usu)
 	{
 		usuarioDTO = usu;
 		for (int i = 0; i < usuarioDTO.size(); i++)
@@ -86,7 +89,9 @@ public class Login extends JFrame {
          		Menu m = new Menu(usu.get(i));
          		m.setVisible(true);
          		dispose();
+         		return true;
 			}
         }
+		return false;
 	}
 }

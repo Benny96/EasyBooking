@@ -44,12 +44,20 @@ public class Vuelos extends JFrame {
 			aeropuertosSocket = EasyBookingController.getInstance().getSocketAeropuertos();
 		} catch (RemoteException e1) 
 		{
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		for (int i = 0; i < aeropuertosSocket.size(); i++)
 		{
 			misaeropuertos.add(new Aeropuerto(aeropuertosSocket.get(i).getCodigo(), aeropuertosSocket.get(i).getNombre()));
+		}
+		
+		try 
+		{
+			numreservas = EasyBookingController.getInstance().numeroReservas();
+		} 
+		catch (RemoteException e1) 
+		{
+			e1.printStackTrace();
 		}
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 634, 415);
@@ -74,8 +82,8 @@ public class Vuelos extends JFrame {
 		lblVuelo_3.setBounds(39, 200, 240, 20);
 		contentPane.add(lblVuelo_3);
 		
-		JLabel lblVuelo_4= new JLabel("Tu número de reservas: "+ numreservas);
-		lblVuelo_4.setBounds(39, 250, 240, 20);
+		JLabel lblVuelo_4= new JLabel("Número total de reservas de los usuarios: "+ numreservas);
+		lblVuelo_4.setBounds(39, 250, 480, 20);
 		contentPane.add(lblVuelo_4);
 		
 		JButton btnReservarVuelo = new JButton("Reservar vuelo 1");
@@ -102,8 +110,6 @@ public class Vuelos extends JFrame {
 			 }
 	     });
 
-		
-		
 		JButton btnReservarVuelo_2 = new JButton("Reservar vuelo 3");
 		btnReservarVuelo_2.setBounds(336, 146, 178, 29);
 		contentPane.add(btnReservarVuelo_2);

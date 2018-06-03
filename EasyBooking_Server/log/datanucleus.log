@@ -5128,3 +5128,418 @@ org.datanucleus.store.rdbms.exceptions.MissingTableException: La tabla no existe
 03-06-18_14:57:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
 03-06-18_14:57:29 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
 03-06-18_14:57:30 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+03-06-18_15:31:06 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_15:31:07 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+03-06-18_15:31:07 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+03-06-18_15:31:07 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+03-06-18_15:31:07 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+03-06-18_15:31:20 (RMI TCP Connection(2)-192.168.37.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:31:21 (RMI TCP Connection(2)-192.168.37.1) INFO  [DataNucleus.JDO] - Exception thrown
+La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+org.datanucleus.store.rdbms.exceptions.MissingTableException: La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:577)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3447)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2969)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1672)
+	at org.datanucleus.store.AbstractStoreManager.getExtent(AbstractStoreManager.java:709)
+	at org.datanucleus.ExecutionContextImpl.getExtent(ExecutionContextImpl.java:5393)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.getExtent(JDOPersistenceManager.java:1555)
+	at es.deusto.ingenieria.sd.eb.server.db.DBManager.getUsuarios(Unknown Source)
+	at es.deusto.ingenieria.sd.eb.server.db.DBManager.guardarUsuario(Unknown Source)
+	at es.deusto.ingenieria.sd.eb.server.remote.UsuarioAdmin.generarNuevoUsuarioFacebook(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:361)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+03-06-18_15:31:21 (RMI TCP Connection(2)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:31:21 (RMI TCP Connection(2)-192.168.37.1) INFO  [DataNucleus.JDO] - Exception thrown
+La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+org.datanucleus.store.rdbms.exceptions.MissingTableException: La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:577)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3447)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2969)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1672)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.getDatastoreClass(RDBMSStoreManager.java:648)
+	at org.datanucleus.store.rdbms.RDBMSPersistenceHandler.getDatastoreClass(RDBMSPersistenceHandler.java:88)
+	at org.datanucleus.store.rdbms.RDBMSPersistenceHandler.insertObject(RDBMSPersistenceHandler.java:123)
+	at org.datanucleus.state.StateManagerImpl.internalMakePersistent(StateManagerImpl.java:4535)
+	at org.datanucleus.state.StateManagerImpl.makePersistent(StateManagerImpl.java:4512)
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:2025)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1868)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1723)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at es.deusto.ingenieria.sd.eb.server.db.DBManager.guardarUsuario(Unknown Source)
+	at es.deusto.ingenieria.sd.eb.server.remote.UsuarioAdmin.generarNuevoUsuarioFacebook(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:361)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+03-06-18_15:31:21 (RMI TCP Connection(2)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:31:29 (RMI TCP Connection(2)-192.168.37.1) INFO  [DataNucleus.JDO] - Exception thrown
+La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+org.datanucleus.store.rdbms.exceptions.MissingTableException: La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:577)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3447)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2969)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1672)
+	at org.datanucleus.store.AbstractStoreManager.getExtent(AbstractStoreManager.java:709)
+	at org.datanucleus.ExecutionContextImpl.getExtent(ExecutionContextImpl.java:5393)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.getExtent(JDOPersistenceManager.java:1555)
+	at es.deusto.ingenieria.sd.eb.server.db.DBManager.getNumReservas(Unknown Source)
+	at es.deusto.ingenieria.sd.eb.server.remote.ReservaAdmin.numeroReservas(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:361)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+03-06-18_15:31:29 (RMI TCP Connection(2)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:31:33 (RMI TCP Connection(2)-192.168.37.1) INFO  [DataNucleus.JDO] - Exception thrown
+La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+org.datanucleus.store.rdbms.exceptions.MissingTableException: La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:577)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3447)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2969)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1672)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.getDatastoreClass(RDBMSStoreManager.java:648)
+	at org.datanucleus.store.rdbms.RDBMSPersistenceHandler.getDatastoreClass(RDBMSPersistenceHandler.java:88)
+	at org.datanucleus.store.rdbms.RDBMSPersistenceHandler.insertObject(RDBMSPersistenceHandler.java:123)
+	at org.datanucleus.state.StateManagerImpl.internalMakePersistent(StateManagerImpl.java:4535)
+	at org.datanucleus.state.StateManagerImpl.makePersistent(StateManagerImpl.java:4512)
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:2025)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1868)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1723)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at es.deusto.ingenieria.sd.eb.server.db.DBManager.guardarReserva(Unknown Source)
+	at es.deusto.ingenieria.sd.eb.server.remote.ReservaAdmin.nuevaReserva(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:361)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+03-06-18_15:31:33 (RMI TCP Connection(2)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:31:56 (RMI TCP Connection(4)-192.168.37.1) INFO  [DataNucleus.JDO] - Exception thrown
+La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+org.datanucleus.store.rdbms.exceptions.MissingTableException: La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:577)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3447)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2969)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1672)
+	at org.datanucleus.store.AbstractStoreManager.getExtent(AbstractStoreManager.java:709)
+	at org.datanucleus.ExecutionContextImpl.getExtent(ExecutionContextImpl.java:5393)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.getExtent(JDOPersistenceManager.java:1555)
+	at es.deusto.ingenieria.sd.eb.server.db.DBManager.getUsuarios(Unknown Source)
+	at es.deusto.ingenieria.sd.eb.server.db.DBManager.guardarUsuario(Unknown Source)
+	at es.deusto.ingenieria.sd.eb.server.remote.UsuarioAdmin.generarNuevoUsuarioGoogle(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:361)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+03-06-18_15:31:56 (RMI TCP Connection(4)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:31:56 (RMI TCP Connection(4)-192.168.37.1) INFO  [DataNucleus.JDO] - Exception thrown
+La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+org.datanucleus.store.rdbms.exceptions.MissingTableException: La tabla no existe : `RESERVA` en Catalog  Schema . El MetaData no es correcto, o necesita poner "datanucleus.schema.autoCreateTables" como "true"
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:577)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3447)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2969)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1672)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.getDatastoreClass(RDBMSStoreManager.java:648)
+	at org.datanucleus.store.rdbms.RDBMSPersistenceHandler.getDatastoreClass(RDBMSPersistenceHandler.java:88)
+	at org.datanucleus.store.rdbms.RDBMSPersistenceHandler.insertObject(RDBMSPersistenceHandler.java:123)
+	at org.datanucleus.state.StateManagerImpl.internalMakePersistent(StateManagerImpl.java:4535)
+	at org.datanucleus.state.StateManagerImpl.makePersistent(StateManagerImpl.java:4512)
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:2025)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1868)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1723)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at es.deusto.ingenieria.sd.eb.server.db.DBManager.guardarUsuario(Unknown Source)
+	at es.deusto.ingenieria.sd.eb.server.remote.UsuarioAdmin.generarNuevoUsuarioGoogle(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:361)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+03-06-18_15:31:56 (RMI TCP Connection(4)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:35:01 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_15:35:01 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+03-06-18_15:35:01 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+03-06-18_15:35:01 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+03-06-18_15:35:01 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+03-06-18_15:35:01 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+03-06-18_15:35:01 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03-06-18_15:35:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-api-jdo-5.1.2.jar
+03-06-18_15:35:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-cache-5.1.0-release.jar
+03-06-18_15:35:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-core-5.1.2.jar
+03-06-18_15:35:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-rdbms-5.1.2.jar
+03-06-18_15:35:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\javax.jdo-3.2.0-m7.jar
+03-06-18_15:35:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\log4j-1.2.14.jar
+03-06-18_15:35:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\mysql-connector-java-5.1.44.jar
+03-06-18_15:35:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin
+03-06-18_15:35:01 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\resources
+03-06-18_15:35:02 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoAssembler.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoDTO.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaAssembler.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaDTO.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\db\DBManager.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+03-06-18_15:35:02 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+03-06-18_15:35:03 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+03-06-18_15:38:06 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_15:38:06 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+03-06-18_15:38:06 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+03-06-18_15:38:06 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+03-06-18_15:38:06 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+03-06-18_15:38:06 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+03-06-18_15:38:06 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03-06-18_15:38:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-api-jdo-5.1.2.jar
+03-06-18_15:38:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-cache-5.1.0-release.jar
+03-06-18_15:38:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-core-5.1.2.jar
+03-06-18_15:38:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-rdbms-5.1.2.jar
+03-06-18_15:38:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\javax.jdo-3.2.0-m7.jar
+03-06-18_15:38:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\log4j-1.2.14.jar
+03-06-18_15:38:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\mysql-connector-java-5.1.44.jar
+03-06-18_15:38:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin
+03-06-18_15:38:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\resources
+03-06-18_15:38:06 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoAssembler.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoDTO.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaAssembler.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaDTO.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\db\DBManager.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+03-06-18_15:38:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+03-06-18_15:38:08 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+03-06-18_15:38:27 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_15:38:27 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+03-06-18_15:38:27 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+03-06-18_15:38:27 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+03-06-18_15:38:27 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+03-06-18_15:39:29 (RMI TCP Connection(2)-192.168.37.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:39:30 (RMI TCP Connection(2)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:39:30 (RMI TCP Connection(2)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:39:31 (RMI TCP Connection(2)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:39:35 (RMI TCP Connection(2)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:43:06 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_15:43:06 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+03-06-18_15:43:06 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+03-06-18_15:43:06 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+03-06-18_15:43:06 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-api-jdo-5.1.2.jar
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-cache-5.1.0-release.jar
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-core-5.1.2.jar
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-rdbms-5.1.2.jar
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\javax.jdo-3.2.0-m7.jar
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\log4j-1.2.14.jar
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\mysql-connector-java-5.1.44.jar
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\resources
+03-06-18_15:43:07 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoAssembler.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoDTO.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaAssembler.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaDTO.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\db\DBManager.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+03-06-18_15:43:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+03-06-18_15:43:09 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+03-06-18_15:43:15 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_15:43:15 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+03-06-18_15:43:15 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+03-06-18_15:43:15 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+03-06-18_15:43:15 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+03-06-18_15:43:15 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+03-06-18_15:43:15 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03-06-18_15:43:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-api-jdo-5.1.2.jar
+03-06-18_15:43:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-cache-5.1.0-release.jar
+03-06-18_15:43:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-core-5.1.2.jar
+03-06-18_15:43:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\datanucleus-rdbms-5.1.2.jar
+03-06-18_15:43:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\javax.jdo-3.2.0-m7.jar
+03-06-18_15:43:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\log4j-1.2.14.jar
+03-06-18_15:43:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\lib\mysql-connector-java-5.1.44.jar
+03-06-18_15:43:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin
+03-06-18_15:43:15 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\resources
+03-06-18_15:43:16 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoAssembler.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoDTO.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaAssembler.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaDTO.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\db\DBManager.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+03-06-18_15:43:16 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+03-06-18_15:44:43 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_15:44:43 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+03-06-18_15:44:43 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+03-06-18_15:44:43 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Beñat\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+03-06-18_15:44:43 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+03-06-18_15:44:51 (RMI TCP Connection(2)-192.168.37.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:44:51 (RMI TCP Connection(2)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:45:23 (RMI TCP Connection(3)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:46:22 (RMI TCP Connection(5)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_15:48:34 (RMI TCP Connection(6)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction

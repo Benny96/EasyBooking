@@ -42,16 +42,8 @@ public class EasyBookingController {
 		return 0;
 	}
 	
-	public List<UsuarioDTO> getUsuarios() {
-		List<UsuarioDTO> usuarios = new ArrayList<>();
-		try {
-			usuarios = rsl.getUsuarioService().getUsuariosDTO();
-		} 
-		catch (RemoteException e) 
-		{
-			e.printStackTrace();
-		}
-		return usuarios;
+	public List<UsuarioDTO> getUsuarios() throws RemoteException {
+		return rsl.getUsuarioService().getUsuariosDTO();
 	}
 
 	public void crearNuevoUsuarioGoogle (String email) throws RemoteException, NullPointerException {

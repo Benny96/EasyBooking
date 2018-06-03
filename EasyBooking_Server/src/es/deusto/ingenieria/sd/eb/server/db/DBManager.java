@@ -21,9 +21,7 @@ public class DBManager {
 	private ArrayList<Reserva> reservasCache;
 	
 	PersistenceManagerFactory pmf;
-	// Persistence Manager
 	PersistenceManager pm;
-	//Transaction to group DB operations
 	Transaction tx;	
 	
 	private DBManager() {
@@ -43,23 +41,14 @@ public class DBManager {
 	{
 		try 
 		{
-		//Get the Persistence Manager
-		pm = pmf.getPersistenceManager();
-		//Obtain the current transaction
-		tx = pm.currentTransaction();		
-		//Start the transaction
-		tx.begin();
-	
-		Extent<Persona> extent = pm.getExtent(Persona.class, true);
-		
-		for (Persona persona : extent) 
-		{
-			this.personasCache.add(persona);
-			//System.out.println("  -> " + account);
-		}
-		//Notice the change in the accounts' balances
-		//End the transaction
-		//tx.commit();
+			pm = pmf.getPersistenceManager();
+			tx = pm.currentTransaction();
+			tx.begin();
+			Extent<Persona> extent = pm.getExtent(Persona.class, true);
+			for (Persona persona : extent) 
+			{
+				this.personasCache.add(persona);
+			}
 		} 
 		catch (Exception ex) 
 		{
@@ -81,23 +70,15 @@ public class DBManager {
 	{
 		try 
 		{
-		//Get the Persistence Manager
-		pm = pmf.getPersistenceManager();
-		//Obtain the current transaction
-		tx = pm.currentTransaction();		
-		//Start the transaction
-		tx.begin();
-	
-		Extent<Usuario> extent = pm.getExtent(Usuario.class, true);
-		this.usuariosCache.clear();
-		for (Usuario usuario : extent) 
-		{
-			this.usuariosCache.add(usuario);
-			//System.out.println("  -> " + account);
-		}
-		//Notice the change in the accounts' balances
-		//End the transaction
-		//tx.commit();
+			pm = pmf.getPersistenceManager();
+			tx = pm.currentTransaction();		
+			tx.begin();
+			Extent<Usuario> extent = pm.getExtent(Usuario.class, true);
+			this.usuariosCache.clear();
+			for (Usuario usuario : extent) 
+			{
+				this.usuariosCache.add(usuario);
+			}
 		} 
 		catch (Exception ex) 
 		{
@@ -108,7 +89,6 @@ public class DBManager {
 			/*if (tx != null && tx.isActive()) {
 				tx.rollback();
 			}*/
-		
 			if (pm != null && !pm.isClosed()) {
 				pm.close();
 			}
@@ -124,9 +104,7 @@ public class DBManager {
 				getUsuarios();
 				pm = pmf.getPersistenceManager();
 				tx = pm.currentTransaction();		
-				//Start the transaction
 				tx.begin();
-				
 				//TODO: Update. Fracaso estrepitoso.
 				/*if (usuario.getReservas().size()>0)
 				{
@@ -147,9 +125,6 @@ public class DBManager {
 					this.usuariosCache.add(usuario);
 					pm.makePersistent(usuario);	
 				//}
-						
-				
-				//End the transaction
 				tx.commit();
 				retorno = true;
 			}
@@ -176,13 +151,9 @@ public class DBManager {
 				this.personasCache.add(persona);
 				
 				pm = pmf.getPersistenceManager();
-				tx = pm.currentTransaction();		
-				//Start the transaction
+				tx = pm.currentTransaction();
 				tx.begin();
-				
-				pm.makePersistent(persona);			
-				
-				//End the transaction
+				pm.makePersistent(persona);
 				tx.commit();
 				retorno = true;
 			}
@@ -204,19 +175,14 @@ public class DBManager {
 	}
 	public boolean guardarReserva(Reserva reserva) {
 		boolean retorno = false;
-		
 		try
 		{
 			this.reservasCache.add(reserva);
 			
 			pm = pmf.getPersistenceManager();
 			tx = pm.currentTransaction();		
-			//Start the transaction
 			tx.begin();
-			
 			pm.makePersistent(reserva);			
-			
-			//End the transaction
 			tx.commit();
 			retorno = true;
 		}
@@ -238,22 +204,15 @@ public class DBManager {
 		int numreservas = 0;
 		try 
 		{
-		//Get the Persistence Manager
-		System.out.println("3333333333333333333333333");
 		pm = pmf.getPersistenceManager();
-		System.out.println("4444444444444444444444444");
-		//Obtain the current transaction
 		tx = pm.currentTransaction();
-		System.out.println("5555555555555555555555555");
-		//Start the transaction
 		tx.begin();
-	
 		Extent<Reserva> extent = pm.getExtent(Reserva.class, true);
 		
-		for (@SuppressWarnings("unused") Reserva reserva : extent) 
-		{
-			numreservas++;
-		}
+			for (Reserva reserva : extent) 
+			{
+				numreservas++;
+			}
 		} 
 		catch (Exception ex) 
 		{
