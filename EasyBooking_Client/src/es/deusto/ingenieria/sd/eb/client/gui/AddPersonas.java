@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.awt.Color;
+
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -52,6 +54,8 @@ public class AddPersonas extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		getContentPane().setBackground(Color.white);
+		setTitle("Datos pasajero");
 		
 		JLabel lblNombre = new JLabel("Nombre");
 		lblNombre.setBounds(44, 74, 83, 14);
@@ -89,7 +93,7 @@ public class AddPersonas extends JFrame {
 		textField_3.setBounds(220, 121, 126, 20);
 		contentPane.add(textField_3);
 		
-		JButton btnAnadirPersona = new JButton("Añadir Persona");
+		JButton btnAnadirPersona = new JButton("Añadir Pasajero");
 		btnAnadirPersona.setBounds(152, 185, 132, 23);
 		contentPane.add(btnAnadirPersona);
 		btnAnadirPersona.addActionListener(new ActionListener() {

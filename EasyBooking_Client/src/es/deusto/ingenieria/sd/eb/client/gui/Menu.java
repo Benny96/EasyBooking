@@ -2,7 +2,8 @@ package es.deusto.ingenieria.sd.eb.client.gui;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import java.awt.Color;
+import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -19,18 +20,21 @@ public class Menu extends JFrame {
 	public Menu(UsuarioDTO aux) {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 641, 456);
+		setBounds(100, 100, 441, 256);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		getContentPane().setBackground(Color.white);
+		setTitle("Reserva de vuelos");
 		
-		JLabel label = new JLabel("Bienvenido," + aux.getEmail());
-		label.setBounds(40, 30, 167, 37);
+		JLabel label = new JLabel("Bienvenido, " + aux.getEmail().toUpperCase());
+		label.setFont(new Font("Times New Roman", Font.PLAIN, 32));
+		label.setBounds(40, 30, 287, 37);
 		contentPane.add(label);
 		
-		JButton btnReservar = new JButton("Reservar");
-		btnReservar.setBounds(229, 157, 115, 29);
+		JButton btnReservar = new JButton("Reservar vuelo");
+		btnReservar.setBounds(150, 130, 175, 29);
 		contentPane.add(btnReservar);
 		
 		btnReservar.addActionListener(new ActionListener() {
@@ -41,9 +45,5 @@ public class Menu extends JFrame {
             	dispose();
             }
         });
-		
-		JLabel lblBienvenido = new JLabel("Bienvenido");
-		lblBienvenido.setBounds(379, 50, 190, 57);
-		contentPane.add(lblBienvenido);
 	}
 }

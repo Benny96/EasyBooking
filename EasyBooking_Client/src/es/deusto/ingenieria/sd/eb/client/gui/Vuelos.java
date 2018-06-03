@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
+import java.awt.Color;
+
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -23,6 +25,7 @@ public class Vuelos extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	
+	
 	private int numreservas;
 	private List<RMIAeropuertoDTO> aeropuertosRMI = new ArrayList<RMIAeropuertoDTO>();
 	private List<AeropuertoDTO> aeropuertosSocket = new ArrayList<AeropuertoDTO>();
@@ -34,6 +37,7 @@ public class Vuelos extends JFrame {
 		/*
 		 * Lectura Aeropuertos RMI:
 		 */
+		
 		aeropuertosRMI = EasyBookingController.getInstance().getRMIAeropuertos();
 		for (int i = 0; i < aeropuertosRMI.size(); i++)
 		{
@@ -65,6 +69,8 @@ public class Vuelos extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		getContentPane().setBackground(Color.white);
+		setTitle("Vuelos disponibles");
 		
 		JLabel lblVuelo = new JLabel("VUELO RMI1: "+ misaeropuertos.get(0).getNombre());
 		lblVuelo.setBounds(39, 60, 204, 20);
@@ -78,9 +84,9 @@ public class Vuelos extends JFrame {
 		lblVuelo_2.setBounds(39, 155, 240, 20);
 		contentPane.add(lblVuelo_2);
 		
-		JLabel lblVuelo_3 = new JLabel("VUELO Socket: "+ misaeropuertos.get(3).getNombre());
+		/*JLabel lblVuelo_3 = new JLabel("VUELO Socket: "+ misaeropuertos.get(3).getNombre());
 		lblVuelo_3.setBounds(39, 200, 240, 20);
-		contentPane.add(lblVuelo_3);
+		contentPane.add(lblVuelo_3);*/
 		
 		JLabel lblVuelo_4= new JLabel("Número total de reservas de los usuarios: "+ numreservas);
 		lblVuelo_4.setBounds(39, 250, 480, 20);

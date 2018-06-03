@@ -1,6 +1,7 @@
 package es.deusto.ingenieria.sd.eb.client.gui;
 
 import java.awt.Font;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.rmi.RemoteException;
@@ -29,8 +30,11 @@ public class Inicio extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		getContentPane().setBackground(Color.white);
+		setTitle("Menu principal");
+
 		
-		JLabel lblBienvenidoAEasybooking = new JLabel("Bienvenido a EasyBooking");
+		JLabel lblBienvenidoAEasybooking = new JLabel("¡Bienvenido a EasyBooking!");
 		lblBienvenidoAEasybooking.setFont(new Font("Tahoma", Font.PLAIN, 31));
 		lblBienvenidoAEasybooking.setBounds(58, 50, 418, 81);
 		contentPane.add(lblBienvenidoAEasybooking);

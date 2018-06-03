@@ -5543,3 +5543,113 @@ org.datanucleus.store.rdbms.exceptions.MissingTableException: La tabla no existe
 03-06-18_15:45:23 (RMI TCP Connection(3)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
 03-06-18_15:46:22 (RMI TCP Connection(5)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
 03-06-18_15:48:34 (RMI TCP Connection(6)-192.168.37.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_16:11:04 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_16:11:04 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+03-06-18_16:11:04 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+03-06-18_16:11:04 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+03-06-18_16:11:04 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+03-06-18_16:11:05 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+03-06-18_16:11:05 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03-06-18_16:11:05 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\datanucleus-api-jdo-5.1.2.jar
+03-06-18_16:11:05 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\datanucleus-cache-5.1.0-release.jar
+03-06-18_16:11:05 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\datanucleus-core-5.1.2.jar
+03-06-18_16:11:05 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\datanucleus-rdbms-5.1.2.jar
+03-06-18_16:11:05 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\javax.jdo-3.2.0-m7.jar
+03-06-18_16:11:05 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\log4j-1.2.14.jar
+03-06-18_16:11:05 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\mysql-connector-java-5.1.44.jar
+03-06-18_16:11:05 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin
+03-06-18_16:11:05 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\resources
+03-06-18_16:11:05 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoAssembler.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoDTO.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaAssembler.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaDTO.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\db\DBManager.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+03-06-18_16:11:07 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+03-06-18_16:11:10 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+03-06-18_16:16:42 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_16:16:42 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+03-06-18_16:16:42 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+03-06-18_16:16:42 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+03-06-18_16:16:42 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+03-06-18_16:44:30 (RMI TCP Connection(37)-192.168.182.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_16:44:32 (RMI TCP Connection(37)-192.168.182.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_16:52:53 (RMI TCP Connection(47)-192.168.182.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_16:59:35 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_16:59:36 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+03-06-18_16:59:36 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+03-06-18_16:59:36 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+03-06-18_16:59:36 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+03-06-18_16:59:36 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+03-06-18_16:59:36 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03-06-18_16:59:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\datanucleus-api-jdo-5.1.2.jar
+03-06-18_16:59:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\datanucleus-cache-5.1.0-release.jar
+03-06-18_16:59:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\datanucleus-core-5.1.2.jar
+03-06-18_16:59:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\datanucleus-rdbms-5.1.2.jar
+03-06-18_16:59:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\javax.jdo-3.2.0-m7.jar
+03-06-18_16:59:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\log4j-1.2.14.jar
+03-06-18_16:59:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\lib\mysql-connector-java-5.1.44.jar
+03-06-18_16:59:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin
+03-06-18_16:59:36 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\resources
+03-06-18_16:59:37 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\EasyBookingManagerServer.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Aeropuerto.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoAssembler.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\AeropuertoDTO.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaAssembler.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\PersonaDTO.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaAssembler.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\ReservaDTO.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioAssembler.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\dto\UsuarioDTO.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\db\DBManager.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\AirToScreen.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\FacebookAuth.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\GoogleAuth.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAir.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayAuth.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\IGatewayPago.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoPayPal.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\gateway\PagoTarjeta.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IReservaAdmin.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\IUsuarioAdmin.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\ReservaAdmin.class
+03-06-18_16:59:38 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\remote\UsuarioAdmin.class
+03-06-18_16:59:40 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+03-06-18_17:02:29 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_17:02:30 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Persona.class" con definicion enhanced
+03-06-18_17:02:30 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Reserva.class" con definicion enhanced
+03-06-18_17:02:30 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBooking\EasyBooking_Server\bin\es\deusto\ingenieria\sd\eb\server\data\Usuario.class" con definicion enhanced
+03-06-18_17:02:30 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+03-06-18_17:03:29 (RMI TCP Connection(2)-192.168.182.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_17:03:31 (RMI TCP Connection(2)-192.168.182.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_17:03:34 (RMI TCP Connection(2)-192.168.182.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_17:05:58 (RMI TCP Connection(3)-192.168.182.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_17:06:02 (RMI TCP Connection(3)-192.168.182.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_17:07:47 (RMI TCP Connection(5)-192.168.182.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
+03-06-18_17:07:50 (RMI TCP Connection(5)-192.168.182.1) WARN  [DataNucleus.General] - ExecutionContext closed with active transaction, so rolling back the active transaction
