@@ -21,20 +21,12 @@ public class Alta extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField textField;
-	private JTextField textField_1;
 	private JFrame alta;
 	
-	private int authGoogle = -1;
-	
 	UsuarioDTO myUser=null;
-	
 
-
-	public Alta() {
-		
-
-		
-		
+	public Alta() 
+	{
 		alta = this;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 652, 467);
@@ -67,9 +59,8 @@ public class Alta extends JFrame {
 		btnRegistrarseGoogle.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            	try {
-            		//Añadir Strategy.
-            		//TODO: Hacer llamada al Gateway. - Se hace internamente en el crearNuevoUsuario().
+            	try 
+            	{
 					EasyBookingController.getInstance().crearNuevoUsuarioGoogle(textField.getText());
 					myUser = new UsuarioDTO(textField.getText());
 					Menu m = new Menu(myUser);
@@ -93,8 +84,8 @@ public class Alta extends JFrame {
 		btnRegistrarseFacebook.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            	try {
-            		//TODO: Hacer llamada al Gateway.
+            	try 
+            	{
 					EasyBookingController.getInstance().crearNuevoUsuarioFacebook(textField.getText());
 					myUser = new UsuarioDTO(textField.getText());
 					Menu m = new Menu(myUser);

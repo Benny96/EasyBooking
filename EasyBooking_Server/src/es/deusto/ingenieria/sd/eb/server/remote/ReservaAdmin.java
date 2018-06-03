@@ -10,7 +10,6 @@ import java.util.TreeMap;
 import java.util.Map.Entry;
 
 import es.deusto.ingenieria.sd.eb.server.data.Reserva;
-import es.deusto.ingenieria.sd.eb.server.data.Usuario;
 import es.deusto.ingenieria.sd.eb.server.data.Aeropuerto;
 import es.deusto.ingenieria.sd.eb.server.data.Persona;
 import es.deusto.ingenieria.sd.eb.server.data.dto.AeropuertoAssembler;
@@ -18,8 +17,6 @@ import es.deusto.ingenieria.sd.eb.server.data.dto.AeropuertoDTO;
 import es.deusto.ingenieria.sd.eb.server.data.dto.PersonaDTO;
 import es.deusto.ingenieria.sd.eb.server.data.dto.ReservaAssembler;
 import es.deusto.ingenieria.sd.eb.server.data.dto.ReservaDTO;
-import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioAssembler;
-import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioDTO;
 import es.deusto.ingenieria.sd.eb.server.db.DBManager;
 import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayAir;
 import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayPago;
@@ -37,23 +34,6 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 		this.resTarjetaService=resTService;
 		this.resPayPalService=resPPService;
 		this.resAirSocketService=resSAService;
-	}
-
-	@Override
-	public List<ReservaDTO> getReservasDTO() throws RemoteException {
-		List<ReservaDTO> reservas = new ArrayList<ReservaDTO>();
-		ReservaAssembler assembler = new ReservaAssembler();
-		reservas = assembler.assemble(getReservas());
-		return reservas;
-	}
-	
-	public synchronized List<Reserva> getReservas() {
-		List<Reserva> reservas = new ArrayList<Reserva>();
-		System.out.println("* Recuperando reservas...");
-		for(Entry<Integer, Reserva> entry : this.reservas.entrySet()) {
-			reservas.add(entry.getValue());
-			}
-		return reservas;
 	}
 
 	@Override
@@ -85,7 +65,6 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 						break;
 					}
 				}*/
-				//TODO: PENSAR SI SOBRA EL MAPA.
 				reservas.put(codigoReserva, reserva);
 				DBManager.getInstance().guardarReserva(reserva);
 			}
@@ -121,7 +100,6 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 						break;
 					}
 				}*/
-				//TODO: PENSAR SI SOBRA EL MAPA.
 				reservas.put(codigoReserva, reserva);
 				DBManager.getInstance().guardarReserva(reserva);
 			}
@@ -131,6 +109,11 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 				throw new RemoteException();
 			}
 		}
+	}
+	
+	@Override
+	public int numeroReservas() throws RemoteException {
+		return DBManager.getInstance().getNumReservas();
 	}
 	
 	public synchronized ArrayList<Persona> getPersonas(ArrayList<PersonaDTO> people) {
@@ -154,12 +137,25 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 	}
 
 	@Override
+	public List<ReservaDTO> getReservasDTO() throws RemoteException {
+		List<ReservaDTO> reservas = new ArrayList<ReservaDTO>();
+		ReservaAssembler assembler = new ReservaAssembler();
+		reservas = assembler.assemble(getReservas());
+		return reservas;
+	}
+	
+	public synchronized List<Reserva> getReservas() {
+		List<Reserva> reservas = new ArrayList<Reserva>();
+		System.out.println("* Recuperando reservas...");
+		for(Entry<Integer, Reserva> entry : this.reservas.entrySet()) {
+			reservas.add(entry.getValue());
+			}
+		return reservas;
+	}
+	
+	@Override
 	public void cancelarReserva(int codigoReserva) throws RemoteException {
 		reservas.remove(codigoReserva);
 		System.out.println("* Cancelando reserva: " + codigoReserva);
-	}
-	@Override
-	public int numeroReservas() throws RemoteException {
-		return DBManager.getInstance().getNumReservas();
 	}
 }

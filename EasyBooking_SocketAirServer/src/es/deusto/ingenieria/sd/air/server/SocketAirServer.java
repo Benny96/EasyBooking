@@ -13,7 +13,6 @@ public class SocketAirServer {
 			System.exit(1);
 		}
 		
-		//args[1] = Server socket port
 		int serverPort = Integer.parseInt(args[0]);
 		
 		try (ServerSocket tcpServerSocket = new ServerSocket(serverPort);) {

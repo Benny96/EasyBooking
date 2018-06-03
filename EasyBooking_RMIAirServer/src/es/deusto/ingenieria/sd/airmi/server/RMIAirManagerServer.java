@@ -24,7 +24,9 @@ public class RMIAirManagerServer {
 			IRMIAirline airlineService = new RMIAirline();
 			Naming.rebind(nameAirline, airlineService);
 			System.out.println("* Airline Admin Service '" + nameAirline + "' active and waiting...");
-		} catch (Exception e) {
+		} 
+		catch (Exception e) 
+		{
 			System.err.println("$ AirlineManager exception: " + e.getMessage());
 			e.printStackTrace();
 		}

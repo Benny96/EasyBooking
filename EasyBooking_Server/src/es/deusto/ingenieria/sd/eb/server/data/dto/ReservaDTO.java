@@ -58,6 +58,4 @@ private static final long serialVersionUID = 1L;
 	public void setPersonas(ArrayList<Persona> personas) {
 		this.personas = personas;
 	}
-		
-
 }

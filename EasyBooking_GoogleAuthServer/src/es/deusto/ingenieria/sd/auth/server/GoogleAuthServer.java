@@ -13,13 +13,14 @@ public class GoogleAuthServer {
 			System.exit(1);
 		}
 		
-		//args[1] = Server socket port
 		int serverPort = Integer.parseInt(args[0]);
 		
-		try (ServerSocket tcpServerSocket = new ServerSocket(serverPort);) {
+		try (ServerSocket tcpServerSocket = new ServerSocket(serverPort);) 
+		{
 			System.out.println(" - GoogleAuthServer: Waiting for connections '" + tcpServerSocket.getInetAddress().getHostAddress() + ":" + tcpServerSocket.getLocalPort() + "' ...");
 			
-			while (true) {
+			while (true) 
+			{
 				new GoogleAuthService(tcpServerSocket.accept());
 				System.out.println(" - GoogleAuthServer: New client connection accepted. Client number: " + ++numClients);
 			}

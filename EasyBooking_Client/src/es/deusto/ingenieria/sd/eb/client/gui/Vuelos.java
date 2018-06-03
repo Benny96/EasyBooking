@@ -22,7 +22,6 @@ public class Vuelos extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JFrame vuelo;
 	
 	private int numreservas;
 	private List<RMIAeropuertoDTO> aeropuertosRMI = new ArrayList<RMIAeropuertoDTO>();
@@ -30,11 +29,8 @@ public class Vuelos extends JFrame {
 	
 	private ArrayList <Aeropuerto> misaeropuertos = new ArrayList<Aeropuerto>();
 	
-	//TODO: ¿Hace falta Reserva o ReservaDTO?
-	public Vuelos(UsuarioDTO aux) {
-		vuelo = this;
-		/** TODO: AÑADIR LECTURA DE AEROPUERTOS DE GATEWAY Y RMI**/
-		
+	public Vuelos(UsuarioDTO aux) 
+	{
 		/*
 		 * Lectura Aeropuertos RMI:
 		 */
@@ -55,8 +51,6 @@ public class Vuelos extends JFrame {
 		{
 			misaeropuertos.add(new Aeropuerto(aeropuertosSocket.get(i).getCodigo(), aeropuertosSocket.get(i).getNombre()));
 		}
-		//pasajeros.add("Pepita");
-		//pasajeros.add("Juanito");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 634, 415);
 		contentPane = new JPanel();
@@ -79,6 +73,10 @@ public class Vuelos extends JFrame {
 		JLabel lblVuelo_3 = new JLabel("VUELO Socket: "+ misaeropuertos.get(3).getNombre());
 		lblVuelo_3.setBounds(39, 200, 240, 20);
 		contentPane.add(lblVuelo_3);
+		
+		JLabel lblVuelo_4= new JLabel("Tu número de reservas: "+ numreservas);
+		lblVuelo_4.setBounds(39, 250, 240, 20);
+		contentPane.add(lblVuelo_4);
 		
 		JButton btnReservarVuelo = new JButton("Reservar vuelo 1");
 		btnReservarVuelo.setBounds(336, 56, 178, 29);

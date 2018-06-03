@@ -20,8 +20,6 @@ public class UsuarioAdmin extends UnicastRemoteObject implements IUsuarioAdmin
 	private Map<String, Usuario> usuarios = new TreeMap<String, Usuario>();
 	private IGatewayAuth gatewayGoogle;
 	private IGatewayAuth gatewayFacebook;
-	
-	//private Map<String, UsuarioDTO> usuarios = new TreeMap<String, UsuarioDTO>();
 
 	public UsuarioAdmin(IGatewayAuth gservice, IGatewayAuth fservice) throws RemoteException, NullPointerException {
 		super();
@@ -75,11 +73,6 @@ public class UsuarioAdmin extends UnicastRemoteObject implements IUsuarioAdmin
 		}
 	}
 
-	public synchronized void eliminarUsuario(String email) {
-		usuarios.remove(email);
-		System.out.println("* Removing users: " + email);
-	}
-
 	public synchronized List<UsuarioDTO> getUsuariosDTO() {
 		List<UsuarioDTO> usuarios = new ArrayList<UsuarioDTO>();
 		UsuarioAssembler assembler = new UsuarioAssembler();
@@ -89,11 +82,16 @@ public class UsuarioAdmin extends UnicastRemoteObject implements IUsuarioAdmin
 	
 	public synchronized List<Usuario> getUsuarios() {
 		List<Usuario> usuarios = new ArrayList<Usuario>();
-		//TODO: Hacer llamada a Gateway Facebook o Google.
 		System.out.println("* Retrieving Usuarios ...");
 		for(Entry<String, Usuario> entry : this.usuarios.entrySet()) {
 			  usuarios.add(entry.getValue());
 			}
 		return usuarios;
+	}
+	
+
+	public synchronized void eliminarUsuario(String email) {
+		usuarios.remove(email);
+		System.out.println("* Removing users: " + email);
 	}
 }

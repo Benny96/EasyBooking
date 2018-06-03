@@ -10,14 +10,11 @@ public class UsuarioDTO implements Serializable {
 	
 	private String Email;
 	private String Aeropuerto;
-	//private String Contrasena;//Esto lo quitamos despues
-	
 	
 	public UsuarioDTO (String email) {
 		super();
 		Email = email;
 		Aeropuerto = "PP";
-		//Contrasena=contrasena;
 	}
 	public String getEmail() {
 		return Email;
@@ -31,10 +28,4 @@ public class UsuarioDTO implements Serializable {
 	public void setAeropuerto(String aeropuerto) {
 		Aeropuerto = aeropuerto;
 	}
-	/*public String getContrasena() {
-		return Contrasena;
-	}
-	public void setContrasena(String contrasena) {
-		Contrasena = contrasena;
-	}*/
 }

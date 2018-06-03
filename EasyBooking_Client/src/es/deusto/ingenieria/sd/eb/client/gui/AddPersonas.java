@@ -38,9 +38,7 @@ public class AddPersonas extends JFrame {
 	private ArrayList<PersonaDTO> pas;
 	private UsuarioDTO user;
 	private Aeropuerto airport;
-	/**
-	 * Create the frame.
-	 */
+
 	public AddPersonas(int numreservas, UsuarioDTO aux, Aeropuerto aero) 
 	{
 		pas = new ArrayList <PersonaDTO>();
@@ -107,7 +105,6 @@ public class AddPersonas extends JFrame {
 		if (textField.getText().length()!=0 && textField_1.getText().length()!=0 && textField_2.getText().length()!=0 && textField_3.getText().length()!=0)
 		{
     		PersonaDTO p = new PersonaDTO(textField.getText(), textField_1.getText(), textField_2.getText(), textField_3.getText());
-    		//TODO: Comprobar que el pasaporte sea único si eso.
     		pas.add(p);
     		cleanText();
     		salir = JOptionPane.showOptionDialog(ventana, "Se ha añadido una nueva persona satisfactoriamente. ¿Quieres añadir otra?", "Añadir más gente", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[0]);
@@ -141,7 +138,7 @@ public class AddPersonas extends JFrame {
 		{
 			String mensaje = "";
 			if (pago == 0) {
-				mensaje = "Tarjeta";
+				mensaje = "tarjeta";
 			}
 			else {
 				mensaje = "PayPal";

@@ -12,14 +12,14 @@ public class Usuario //extends Persona
 {
 	@PrimaryKey
 	private String email;
-	private String aero; //Tendrá que ser un String, no un aero.
+	private String aero;
 	
 	@Persistent(mappedBy="email", dependentElement="true")
 	@Join
 	private ArrayList<Reserva> reservas = new ArrayList<Reserva>();
 	
-	public Usuario (String email) {
-		//super();
+	public Usuario (String email) 
+	{
 		this.email = email;
 		aero = "PP";
 	}

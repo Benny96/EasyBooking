@@ -3,11 +3,6 @@ package es.deusto.ingenieria.sd.eb.server.data.dto;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import javax.jdo.annotations.Join;
-import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Persistent;
-import javax.jdo.annotations.PrimaryKey;
-
 import es.deusto.ingenieria.sd.eb.server.data.Reserva;
 
 public class PersonaDTO implements Serializable {

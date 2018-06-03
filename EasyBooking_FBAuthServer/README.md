@@ -1,2 +1,10 @@
 # EasyBooking_FBAuthServer
-Servidor que tendrÃ¡ las funciones de autenticaciÃ³n de Facebook de EasyBooking
+
+Servidor externo que tendrá las funciones de autenticación de Facebook de EasyBooking
+
+## Autores
+
+Garikoitz Bereciartua (garibere13) 
+Imanol Echeverría (Echever)
+Anne Idigoras (anneidigoras)
+y yo, Beñat Galdós (Benny96). 

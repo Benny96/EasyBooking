@@ -15,12 +15,9 @@ public class Menu extends JFrame {
 	
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	//public ArrayList <Reserva> reservas;
 
 	public Menu(UsuarioDTO aux) {
 		
-		//TODO: Pensar añadir caso de uso Mostrar Reservas.
-		//reservas = new ArrayList <Reserva>();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 641, 456);
 		contentPane = new JPanel();

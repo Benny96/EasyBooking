@@ -4,15 +4,11 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.EOFException;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.ArrayList;
 
 public class SocketAirService extends Thread {
 	
-	//private ObjectOutputStream out;
-	//private ObjectInputStream in;
 	private DataInputStream in;
 	private DataOutputStream out;
 	private Socket tcpSocket;
@@ -23,10 +19,9 @@ public class SocketAirService extends Thread {
 		lista.add(new AeropuertoSocketDTO("AERO4", "dddddd"));
 		lista.add(new AeropuertoSocketDTO("AERO5", "eeeeee"));
 		System.out.println("LLego1");
-		try {
+		try 
+		{
 			this.tcpSocket = socket;
-			//this.out = new ObjectOutputStream(socket.getOutputStream());
-		    //this.in = new ObjectInputStream(socket.getInputStream());
 			this.in = new DataInputStream(socket.getInputStream());
 			this.out = new DataOutputStream(socket.getOutputStream());
 			this.start();
@@ -35,7 +30,8 @@ public class SocketAirService extends Thread {
 		}
 	}
 
-	public void run() {
+	public void run() 
+	{
 		try {
 			System.out.println("LLego1");
 			System.out.println("   - SocketAirService - Received data from '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort());	
@@ -44,8 +40,7 @@ public class SocketAirService extends Thread {
 			{
 				out.writeUTF(lista.get(i).getCodigo());
 				out.writeUTF(lista.get(i).getNombre());
-			}
-			//this.out.writeObject(recopilar());					
+			}				
 			System.out.println("   - SocketAirService - Sent data to '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort());
 		} catch (EOFException e) {
 			System.err.println("   # SocketAirService - TCPConnection EOF error" + e.getMessage());
@@ -59,8 +54,4 @@ public class SocketAirService extends Thread {
 			}
 		}
 	}
-	
-	/*public ArrayList <AeropuertoSocketDTO> recopilar() {
-		return lista;
-	}*/
 }

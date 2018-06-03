@@ -29,31 +29,11 @@ public class EasyBookingController {
 		return instance;
 	}
 
-	public List<ReservaDTO> getReservas() {
-		List<ReservaDTO> reservas = new ArrayList<>();
-		try {
-			reservas = rsl.getReservaService().getReservasDTO();
-		} 
-		catch (RemoteException e) 
-		{
-			e.printStackTrace();
-		}
-		return reservas;
-	}
-
 	public void nuevaReserva(int codigoReserva, String email, String codigoVuelo, Date fecha, ArrayList<PersonaDTO> personas, int pago) throws RemoteException {
 			rsl.getReservaService().nuevaReserva(codigoReserva, email, codigoVuelo, fecha, personas, pago);
 	}
-
-	public void cancelarReserva(int codigoReserva) throws RemoteException{
-		try {
-			rsl.getReservaService().cancelarReserva(codigoReserva);
-		} catch (RemoteException e) {
-			e.printStackTrace();
-		}
-	}
 	
-	public int numeroReservas() throws RemoteException{
+	public int numeroReservas() throws RemoteException {
 		try {
 			return rsl.getReservaService().numeroReservas();
 		} catch (RemoteException e) {
@@ -97,7 +77,30 @@ public class EasyBookingController {
 	public List<AeropuertoDTO> getSocketAeropuertos() throws RemoteException {
 		return rsl.getReservaService().getAeropuertosSocketDTO();
 	}
-
+	
+	//TODO: Finalmente no se ha utilizado en esta implementación. Se podría tratar de asignar esta función en un futuro.
+	public List<ReservaDTO> getReservas() {
+		List<ReservaDTO> reservas = new ArrayList<>();
+		try {
+			reservas = rsl.getReservaService().getReservasDTO();
+		} 
+		catch (RemoteException e) 
+		{
+			e.printStackTrace();
+		}
+		return reservas;
+	}
+	
+	//TODO: Finalmente no se ha utilizado en esta implementación. Se podría tratar de asignar esta función en un futuro.
+	public void cancelarReserva(int codigoReserva) throws RemoteException{
+		try {
+			rsl.getReservaService().cancelarReserva(codigoReserva);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	//TODO: Finalmente no se ha utilizado en esta implementación. Se podría tratar de asignar esta función en un futuro.
 	public void eliminarUsuario (String email) {
 		try {
 			rsl.getUsuarioService().eliminarUsuario(email);

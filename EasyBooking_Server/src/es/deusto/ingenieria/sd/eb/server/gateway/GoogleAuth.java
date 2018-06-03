@@ -17,8 +17,8 @@ public class GoogleAuth implements IGatewayAuth {
 		port = arg2;
 	}
 	@Override
-	public int darAltaUsuario(String correo) {
-		// TODO Hacer Alta Usuario Google.
+	public int darAltaUsuario(String correo) 
+	{
 		String data = null;
 		Socket socket;
 		DataInputStream in = null;
@@ -35,13 +35,12 @@ public class GoogleAuth implements IGatewayAuth {
 			//Read request from the client
 			data = in.readUTF();
 			resultado = Integer.parseInt(data);
-			//resultado = in.readInt(); //PETA AQUÍ POR IOException.
 			System.out.println("   - GoogleAuth - Received data from '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort() + "' -> '" + data + "'");		
 			socket.close();
 		}catch (EOFException e) {
 			System.err.println("   # UsuarioService - GoogleAuth - TCPConnection EOF error" + e.getMessage());
 		}	
-		catch (IOException e1) { //ESTÁ AQUÍ EL PROBLEMA.
+		catch (IOException e1) {
 			System.err.println("   # UsuarioService - GoogleAuth - TCPConnection IO error:" + e1.getMessage());
 		} 
 		return resultado;

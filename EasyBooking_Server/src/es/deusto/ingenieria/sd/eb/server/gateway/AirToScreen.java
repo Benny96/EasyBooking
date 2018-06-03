@@ -4,11 +4,8 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.EOFException;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Date;
 
 import es.deusto.ingenieria.sd.eb.server.data.Aeropuerto;
 
@@ -23,14 +20,10 @@ public class AirToScreen implements IGatewayAir {
 		port = arg2;
 	}
 	@Override
-	public ArrayList <Aeropuerto> buscarVuelos() {
-		// TODO Auto-generated method stub
-		//Recoger String con formato previo a traducir
-		//Devolver el String con el formato adecuado
+	public ArrayList <Aeropuerto> buscarVuelos() 
+	{
 		ArrayList<Aeropuerto> data = new ArrayList<Aeropuerto>();
 		Socket socket;
-		//ObjectOutputStream out = null;
-		//ObjectInputStream in = null;
 		DataInputStream in = null;
 		DataOutputStream out = null;
 		Aeropuerto aux = null;
@@ -40,13 +33,9 @@ public class AirToScreen implements IGatewayAir {
 			in = new DataInputStream(socket.getInputStream());
 			out = new DataOutputStream(socket.getOutputStream());
 			
-		
 			System.out.println("   - AirToScreen - Sent request to '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort());
 			
 			numdatos = in.readInt();
-			//Read request from the client
-			//TODO: Cambiar la lectura de aeropuertos.
-			//data = in.readUTF();
 			for (int i = 0; i < numdatos; i++)
 			{
 				aux = new Aeropuerto(in.readUTF(),in.readUTF());

@@ -25,5 +25,4 @@ public class AeropuertoDTO implements Serializable {
 	public void setNombre(String nombre) {
 		Nombre = nombre;
 	}
-
 }

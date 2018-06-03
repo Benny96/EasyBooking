@@ -17,10 +17,8 @@ public class PagoPayPal implements IGatewayPago {
 		port = arg2;
 	}
 	@Override
-	public int efectuarPago(String correo, double cantidad) {
-		// TODO Auto-generated method stub
-		//Recoger String con formato previo a traducir
-		//Devolver el String con el formato adecuado
+	public int efectuarPago(String correo, double cantidad) 
+	{
 		String data = null;
 		Socket socket;
 		DataInputStream in = null;

@@ -22,5 +22,4 @@ public class Aeropuerto {
 	public void setNombre(String nombre) {
 		Nombre = nombre;
 	}
-
 }
