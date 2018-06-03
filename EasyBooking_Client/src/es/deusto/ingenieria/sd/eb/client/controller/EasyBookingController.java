@@ -39,8 +39,8 @@ public class EasyBookingController {
 		return reservas;
 	}
 
-	public boolean nuevaReserva(int codigoReserva, String email, String codigoVuelo, Date fecha, ArrayList<PersonaDTO> personas) throws RemoteException {
-			return rsl.getReservaService().nuevaReserva(codigoReserva, email, codigoVuelo, fecha, personas);
+	public void nuevaReserva(int codigoReserva, String email, String codigoVuelo, Date fecha, ArrayList<PersonaDTO> personas, int pago) throws RemoteException {
+			rsl.getReservaService().nuevaReserva(codigoReserva, email, codigoVuelo, fecha, personas, pago);
 	}
 
 	public void cancelarReserva(int codigoReserva) throws RemoteException{

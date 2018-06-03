@@ -31,8 +31,10 @@ public class AddPersonas extends JFrame {
 	
 	private JFrame ventana;
 	String[] opciones = {"Sí", "No"};
-	int salir = 0;
-	int numres = 0;
+	String[] pagos = {"Tarjeta", "PayPal"};
+	private int salir = -1;
+	private int pago = -1;
+	private int numres = 0;
 	private ArrayList<PersonaDTO> pas;
 	private UsuarioDTO user;
 	private Aeropuerto airport;
@@ -111,10 +113,13 @@ public class AddPersonas extends JFrame {
     		salir = JOptionPane.showOptionDialog(ventana, "Se ha añadido una nueva persona satisfactoriamente. ¿Quieres añadir otra?", "Añadir más gente", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[0]);
     		if (salir == 1)
     		{
-    			iniciarReserva(pas, user, airport);
-    			JOptionPane.showMessageDialog(ventana, "He realizado la reserva del codigo "+airport.getCodigo());
-    			ventana.setVisible(false);
-        		ventana.dispose();
+    			pago = JOptionPane.showOptionDialog(ventana, "Quieres pagar con Tarjeta o con PayPal", "Realizar Pago", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, pagos, pagos[0]);
+	    		if (pago == 0 || pago == 1)
+	    		{
+	    			iniciarReserva(pas, user, airport, pago);
+		    		ventana.setVisible(false);
+		        	ventana.dispose();
+	    		}	
     		}
 		}
 	}
@@ -125,16 +130,23 @@ public class AddPersonas extends JFrame {
 		textField_2.setText("");
 		textField_3.setText("");
 	}
-	public void iniciarReserva(ArrayList<PersonaDTO> pasajeros, UsuarioDTO aux, Aeropuerto airport)
+	public void iniciarReserva(ArrayList<PersonaDTO> pasajeros, UsuarioDTO aux, Aeropuerto airport, int pago)
 	{
 		try 
 		{
-			System.out.println("NUMRES DESPUÉS: "+ numres);
-			EasyBookingController.getInstance().nuevaReserva(++numres,aux.getEmail(),airport.getCodigo(),new Date() ,pasajeros);
+			EasyBookingController.getInstance().nuevaReserva(++numres,aux.getEmail(),airport.getCodigo(),new Date() ,pasajeros, pago);
+			JOptionPane.showMessageDialog(ventana, "Ha realizado la reserva del codigo "+airport.getCodigo());
 		} 
 		catch (RemoteException e) 
 		{
-			e.printStackTrace();
+			String mensaje = "";
+			if (pago == 0) {
+				mensaje = "Tarjeta";
+			}
+			else {
+				mensaje = "PayPal";
+			}
+			JOptionPane.showMessageDialog(ventana, "No se ha podido hacer la reserva por no haber suficiente dinero en tu" + mensaje, "Error al reservar", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 }

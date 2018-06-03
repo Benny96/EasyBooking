@@ -26,67 +26,13 @@ public class DBManager {
 	//Transaction to group DB operations
 	Transaction tx;	
 	
-	/*private List<Category> categoriesCache;
-	private List<Article> articlesCache;
-	private List<User> usersCache;
-	private List<Bid> bidsCache;*/
-	
 	private DBManager() {
 		this.usuariosCache = new ArrayList<Usuario>();
 		this.personasCache = new ArrayList<Persona>();
 		this.reservasCache = new ArrayList<Reserva>();
-		System.out.println("RTOIPMHRPTOMYPORMYOPRTYKROPKYRPOTYRTOPYKROPYJKROPTYKROPTYKROPTKYORPTY");
 		pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
-		System.out.println("ASASDASDASDASDASDASDASDASDASDASDASDASDASDASDADASDASD");
 		pm = null;
 		tx = null;
-		/*this.categoriesCache = new ArrayList<>();
-		this.articlesCache = new ArrayList<>();
-		this.usersCache = new ArrayList<>();
-		this.bidsCache =  new ArrayList<>();
-
-		User user1 = new User();
-		user1.setEmail("sample@gmail.com");
-		user1.setNickname("buyer33");
-		user1.setPassword("12345");		
-		
-		User user2 = new User();
-		user2.setEmail("troyaikman08@hotmail.com");
-		user2.setNickname("troyaikman08");
-		user2.setPassword("12345");
-		
-		this.usersCache.add(user1);
-		this.usersCache.add(user2);
-		
-		Category iPadCat = new Category();
-		iPadCat.setName("iPad");
-		
-		this.categoriesCache.add(iPadCat);
-		
-		Article iPadCover = new Article();
-		iPadCover.setActive(true);
-		iPadCover.setCategory(iPadCat);
-		iPadCover.setInitialPrice(10.0f);
-		iPadCover.setNumber(1);
-		iPadCover.setOwner(user2);
-		iPadCover.setTitle("iPad 2 Cover");		
-		
-		iPadCat.addArticle(iPadCover);
-		user2.addArticle(iPadCover);
-		
-		Article iPadStylus = new Article();
-		iPadStylus.setActive(true);
-		iPadStylus.setCategory(iPadCat);
-		iPadStylus.setInitialPrice(15.50f);
-		iPadStylus.setNumber(2);
-		iPadCover.setOwner(user2);
-		iPadStylus.setTitle("iPad Stylus");
-		
-		iPadCat.addArticle(iPadStylus);
-		user2.addArticle(iPadStylus);
-		
-		this.articlesCache.add(iPadCover);
-		this.articlesCache.add(iPadStylus);*/
 	}
 
 	public static DBManager getInstance() {
@@ -143,7 +89,7 @@ public class DBManager {
 		tx.begin();
 	
 		Extent<Usuario> extent = pm.getExtent(Usuario.class, true);
-		
+		this.usuariosCache.clear();
 		for (Usuario usuario : extent) 
 		{
 			this.usuariosCache.add(usuario);
@@ -171,16 +117,37 @@ public class DBManager {
 	}
 	public boolean guardarUsuario(Usuario usuario) {
 		boolean retorno = false;
+		//Usuario aux;
+		//Object id;
 			try
-			{
-				this.usuariosCache.add(usuario);
-				
+			{	
+				getUsuarios();
 				pm = pmf.getPersistenceManager();
 				tx = pm.currentTransaction();		
 				//Start the transaction
 				tx.begin();
 				
-				pm.makePersistent(usuario);			
+				//TODO: Update. Fracaso estrepitoso.
+				/*if (usuario.getReservas().size()>0)
+				{
+					for (int i = 0; i < usuariosCache.size(); i++)
+					{
+						if (usuariosCache.get(i).getEmail().compareTo(usuario.getEmail())==0)
+						{
+							id = pm.getObjectById(Usuario.class, usuariosCache.get(i).getEmail());
+							aux = (Usuario) pm.getObjectById(id);
+							usuariosCache.set(i, usuario);
+							aux.setReserva(usuario.getReservas().get(0)); //Solo deberia guardar 1 reserva asi.
+							break;
+						}
+					}
+				}
+				else 
+				{*/
+					this.usuariosCache.add(usuario);
+					pm.makePersistent(usuario);	
+				//}
+						
 				
 				//End the transaction
 				tx.commit();
@@ -259,10 +226,6 @@ public class DBManager {
 		}
 		finally 
 		{
-			/*if (tx != null && tx.isActive()) {
-				tx.rollback();
-			}*/
-		
 			if (pm != null && !pm.isClosed()) {
 				pm.close();
 			}
@@ -287,14 +250,10 @@ public class DBManager {
 	
 		Extent<Reserva> extent = pm.getExtent(Reserva.class, true);
 		
-		for (Reserva reserva : extent) 
+		for (@SuppressWarnings("unused") Reserva reserva : extent) 
 		{
 			numreservas++;
-			//System.out.println("  -> " + account);
 		}
-		//Notice the change in the accounts' balances
-		//End the transaction
-		//tx.commit();
 		} 
 		catch (Exception ex) 
 		{
@@ -302,86 +261,10 @@ public class DBManager {
 		}
 		finally 
 		{
-			/*if (tx != null && tx.isActive()) {
-				tx.rollback();
-			}*/
-		
 			if (pm != null && !pm.isClosed()) {
 				pm.close();
 			}
 		}
 		return numreservas;
 	}
-	/**
-	public boolean store(Category category) {
-		this.categoriesCache.add(category);
-		
-		return true;
-	}
-
-	public boolean store(Article article) {
-		this.articlesCache.add(article);
-		
-		return true;
-	}
-
-	public boolean store(User user) {
-		this.usersCache.add(user);
-		
-		return true;
-	}
-
-	public boolean store(Bid bid) {
-		this.bidsCache.add(bid);
-		
-		return true;
-	}
-
-	public Category getCategory(String categoryName) {		
-		for (Category category : this.categoriesCache) {
-			if (category.getName().equalsIgnoreCase(categoryName)) {
-				return category;
-			}
-		}
-		
-		return null;
-	}
-
-	public List<Category> getCategories() {
-		return this.categoriesCache;
-	}
-
-	public Article getArticle(long number) {
-		
-		for (Article article : this.articlesCache) {
-			if (article.getNumber() == number) {
-				return article;
-			}
-		}		
-		
-		return null;
-	}
-
-	public List<Article> getArticles(String category) {
-		List<Article> articles = new ArrayList<>();
-		
-		for (Article article : this.articlesCache) {
-			if (article.getCategory().getName().equalsIgnoreCase(category)) {
-				articles.add(article);
-			}			
-		}
-		
-		return articles;
-	}
-
-	public User getUser(String email) {
-		
-		for (User user : this.usersCache) {
-			if (user.getEmail().equalsIgnoreCase(email)) {
-				return user;
-			}
-		}
-		
-		return null;
-		*/
 }

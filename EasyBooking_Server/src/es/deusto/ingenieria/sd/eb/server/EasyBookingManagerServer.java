@@ -10,6 +10,7 @@ import javax.jdo.Transaction;
 
 import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayPago;
 import es.deusto.ingenieria.sd.eb.server.gateway.PagoPayPal;
+import es.deusto.ingenieria.sd.eb.server.gateway.PagoTarjeta;
 import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayAir;
 import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayAuth;
 import es.deusto.ingenieria.sd.eb.server.gateway.AirToScreen;
@@ -39,13 +40,16 @@ public class EasyBookingManagerServer {
 
 		try {
 			
-			//IGatewayPago resService = new PagoPayPal(args[6], Integer.parseInt(args[7]));
+			IGatewayPago resTarjetaService = new PagoTarjeta(args[4], Integer.parseInt(args[5]));
+			IGatewayPago resPayPalService = new PagoPayPal(args[6], Integer.parseInt(args[7]));
+			
+			
 			//IGatewayAir airService = new AirToScreen(args[8], Integer.parseInt(args[9]));
 			
 			IGatewayAuth googleService = new GoogleAuth(args[10], Integer.parseInt(args[11]));
 			IGatewayAuth facebookService = new FacebookAuth(args[12], Integer.parseInt(args[13]));
 			
-			IReservaAdmin reservaAdminService = new ReservaAdmin();			
+			IReservaAdmin reservaAdminService = new ReservaAdmin(resTarjetaService, resPayPalService);			
 			Naming.rebind(nameReserva, reservaAdminService);
 			System.out.println("* Reserva Admin Service '" + nameReserva + "' active and waiting...");
 			

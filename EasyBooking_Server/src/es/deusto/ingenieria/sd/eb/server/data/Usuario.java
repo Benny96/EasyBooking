@@ -7,13 +7,12 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
-@PersistenceCapable
+@PersistenceCapable (detachable="true")
 public class Usuario //extends Persona
 {
 	@PrimaryKey
-	private String Email;
-	private String Aeropuerto; //Tendrá que ser un String, no un Aeropuerto.
-	//private String Contrasena;//Esto lo quitamos despues
+	private String email;
+	private String aero; //Tendrá que ser un String, no un aero.
 	
 	@Persistent(mappedBy="email", dependentElement="true")
 	@Join
@@ -21,28 +20,25 @@ public class Usuario //extends Persona
 	
 	public Usuario (String email) {
 		//super();
-		Email = email;
-		Aeropuerto = "PP";
-		//Contrasena=contrasena;
+		this.email = email;
+		aero = "PP";
 	}
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 	public String getAeropuerto() {
-		return Aeropuerto;
+		return aero;
 	}
-	public void setString(String aeropuerto) {
-		Aeropuerto = aeropuerto;
+	public void setAeropuerto(String aero) {
+		this.aero = aero;
 	}
-	/*public String getContrasena() {
-		return Contrasena;
+	public ArrayList<Reserva> getReservas() {
+		return reservas;
 	}
-	public void setContrasena(String contrasena) {
-		Contrasena = contrasena;
-	}*/
-	
-	
+	public void setReserva(Reserva reserva) {
+		reservas.add(reserva);
+	}
 }

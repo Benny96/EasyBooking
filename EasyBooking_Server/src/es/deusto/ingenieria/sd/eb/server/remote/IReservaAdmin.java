@@ -12,7 +12,7 @@ import es.deusto.ingenieria.sd.eb.server.data.dto.ReservaDTO;
 public interface IReservaAdmin extends Remote {
 	
 	public List<ReservaDTO> getReservasDTO() throws RemoteException;
-	public boolean nuevaReserva(int codigoReserva, String email, String codigoVuelo, Date fecha, ArrayList<PersonaDTO> personas)throws RemoteException;
+	public void nuevaReserva(int codigoReserva, String email, String codigoVuelo, Date fecha, ArrayList<PersonaDTO> personas, int pago)throws RemoteException;
 	public void cancelarReserva(int codigoReserva) throws RemoteException;
 	public int numeroReservas() throws RemoteException;
 }

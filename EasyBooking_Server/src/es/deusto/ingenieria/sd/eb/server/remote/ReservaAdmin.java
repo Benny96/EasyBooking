@@ -10,6 +10,7 @@ import java.util.TreeMap;
 import java.util.Map.Entry;
 
 import es.deusto.ingenieria.sd.eb.server.data.Reserva;
+import es.deusto.ingenieria.sd.eb.server.data.Usuario;
 import es.deusto.ingenieria.sd.eb.server.data.Persona;
 import es.deusto.ingenieria.sd.eb.server.data.dto.PersonaDTO;
 import es.deusto.ingenieria.sd.eb.server.data.dto.ReservaAssembler;
@@ -22,12 +23,14 @@ import es.deusto.ingenieria.sd.eb.server.gateway.IGatewayPago;
 public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 	
 	private static final long serialVersionUID = 1L;
-	//private IGatewayPago resService;
+	private IGatewayPago resTarjetaService;
+	private IGatewayPago resPayPalService;
 	private Map<Integer, Reserva> reservas = new TreeMap<Integer, Reserva>();
 	
-	public ReservaAdmin() throws RemoteException {
+	public ReservaAdmin(IGatewayPago resTService, IGatewayPago resPPService) throws RemoteException {
 		super();
-		//this.resService=resService;
+		this.resTarjetaService=resTService;
+		this.resPayPalService=resPPService;
 	}
 
 	@Override
@@ -48,19 +51,80 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 	}
 
 	@Override
-	public boolean nuevaReserva(int codigoReserva, String email, String codigoVuelo, Date fecha, ArrayList<PersonaDTO> personas) throws RemoteException 
+	public void nuevaReserva(int codigoReserva, String email, String codigoVuelo, Date fecha, ArrayList<PersonaDTO> personas, int pago) throws RemoteException 
 	{
 		//TODO: Test a cambiar.
-		//if(resService.efectuarPago(email, 50.0)==1) 
-		//{
-			System.out.println("* Creando una nueva reserva: " + codigoReserva);
-			Reserva reserva = new Reserva (codigoReserva, email, codigoVuelo, fecha, getPersonas(personas));
-			//TODO: PENSAR SI SOBRA EL MAPA.
-			reservas.put(codigoReserva, reserva);
-			DBManager.getInstance().guardarReserva(reserva);
-			return true;
-		//}
-		//return false;
+		if (pago == 0)
+		{
+			System.out.println("Comprobando saldo de Tarjeta del email "+ email);
+			if(resTarjetaService.efectuarPago(email, personas.size()*50)==0)
+			{
+				System.out.println("Hay saldo suficiente para operar en la Tarjeta.");
+				System.out.println("* Creando una nueva reserva: " + codigoReserva);
+				Reserva reserva = new Reserva (codigoReserva, email, codigoVuelo, fecha, getPersonas(personas));
+				//TODO: Fracaso estrepitoso de la Update.
+				/*List<Usuario> usuarios = new ArrayList<Usuario>();
+				usuarios = DBManager.getInstance().getUsuarios();
+				for (Usuario aux: usuarios)
+				{
+					if (aux.getEmail().compareTo(email)==0)
+					{
+						Usuario usu = new Usuario(aux.getEmail());*/
+						/*for (int i = 0; i<aux.getReservas().size(); i++)
+						{
+							usu.setReserva(aux.getReservas().get(i));
+						}*/
+				/*		usu.setReserva(reserva);
+						DBManager.getInstance().guardarUsuario(usu); //No hace una update de la tabla.
+						break;
+					}
+				}*/
+				//TODO: PENSAR SI SOBRA EL MAPA.
+				reservas.put(codigoReserva, reserva);
+				DBManager.getInstance().guardarReserva(reserva);
+			}
+			else
+			{
+				System.out.println("No hay saldo suficiente en la Tarjeta. No se puede hacer esta reserva.");
+				throw new RemoteException();
+			}
+		}
+		else
+		{
+			System.out.println("Comprobando saldo de PayPal del email "+ email);
+			if(resPayPalService.efectuarPago(email, personas.size()*50)==0)
+			{
+				System.out.println("Hay saldo suficiente para pagar con PayPal.");
+				System.out.println("* Creando una nueva reserva: " + codigoReserva);
+				Reserva reserva = new Reserva (codigoReserva, email, codigoVuelo, fecha, getPersonas(personas));
+				
+				//TODO: Fracaso estrepitoso de la Update.
+				/*List<Usuario> usuarios = new ArrayList<Usuario>();
+				usuarios = DBManager.getInstance().getUsuarios();
+				for (Usuario aux: usuarios)
+				{
+					if (aux.getEmail().compareTo(email)==0)
+					{
+						Usuario usu = new Usuario(aux.getEmail());*/
+						/*for (int i = 0; i<aux.getReservas().size(); i++)
+						{
+							usu.setReserva(aux.getReservas().get(i));
+						}*/
+				/*		usu.setReserva(reserva);
+						DBManager.getInstance().guardarUsuario(usu); //No hace una update de la tabla.
+						break;
+					}
+				}*/
+				//TODO: PENSAR SI SOBRA EL MAPA.
+				reservas.put(codigoReserva, reserva);
+				DBManager.getInstance().guardarReserva(reserva);
+			}
+			else
+			{
+				System.out.println("No hay saldo suficiente en PayPal. No se puede hacer esta reserva.");
+				throw new RemoteException();
+			}
+		}
 	}
 	
 	public synchronized ArrayList<Persona> getPersonas(ArrayList<PersonaDTO> people) {

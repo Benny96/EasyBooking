@@ -6,22 +6,21 @@ import java.io.EOFException;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.StringTokenizer;
-
-import com.memetix.mst.language.Language;
-import com.memetix.mst.translate.Translate;
 
 public class PayPalService extends Thread {
 	private DataInputStream in;
 	private DataOutputStream out;
 	private Socket tcpSocket;
-	private static String DELIMITER = "#";
 	
-	private ArrayList<String> ejemplo;
+	private ArrayList<CuentaPayPal> lista = new ArrayList <CuentaPayPal>();
 	
 	public PayPalService(Socket socket) {
-		ejemplo.add("IMANOL");
-		ejemplo.add("GARI");
+		lista.add(new CuentaPayPal("IMANOL", 100.0));
+		lista.add(new CuentaPayPal("GARI", 150.0));
+		lista.add(new CuentaPayPal("ANNE", 250.0));
+		lista.add(new CuentaPayPal("BEÑAT", 200.0));
+		lista.add(new CuentaPayPal("PEPITO", 125.0));
+		lista.add(new CuentaPayPal("JON", 175.0));
 		try {
 			this.tcpSocket = socket;
 		    this.in = new DataInputStream(socket.getInputStream());
@@ -34,10 +33,12 @@ public class PayPalService extends Thread {
 
 	public void run() {
 		try {
-			String data = this.in.readUTF();			
+			String data = this.in.readUTF();
+			double cantidad = this.in.readDouble();
+			System.out.println("LLego1");
 			System.out.println("   - PayPalService - Received data from '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data + "'");					
-			int resultado = this.translate(data);
-			this.out.writeInt(resultado);					
+			data= Integer.toString(verificar(data, cantidad));
+			this.out.writeUTF(data);					
 			System.out.println("   - PayPalService - Sent data to '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data.toUpperCase() + "'");
 		} catch (EOFException e) {
 			System.err.println("   # PayPalService - TCPConnection EOF error" + e.getMessage());
@@ -52,13 +53,17 @@ public class PayPalService extends Thread {
 		}
 	}
 	
-	public int translate(String msg) {
-		
-		for(String aux: ejemplo)
+	public int verificar(String msg, double cantidad) {
+		int existe=-1;
+		System.out.println("LLego2");
+		for(int i = 0; i < lista.size(); i++)
 		{
-			if(aux.compareTo(msg)==0)
-				return 1;
+			if(lista.get(i).getEmail().compareTo(msg)==0 && lista.get(i).getCant()>=cantidad)
+			{
+				lista.get(i).setCant(lista.get(i).getCant()-cantidad);
+				existe=0;
+			}			
 		}
-		return 0;
+		return existe;
 	}
 }

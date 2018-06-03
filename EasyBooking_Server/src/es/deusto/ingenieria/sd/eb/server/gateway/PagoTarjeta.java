@@ -28,13 +28,16 @@ public class PagoTarjeta implements IGatewayPago {
 		int resultado=0;
 		try {
 			socket = new Socket(host, port);
+			data = correo.toUpperCase();
 			in = new DataInputStream(socket.getInputStream());
 			out = new DataOutputStream(socket.getOutputStream());
-			out.writeUTF(correo.toUpperCase());
+			out.writeUTF(data);
+			out.writeDouble(cantidad);
 			System.out.println("   - PagoTarjeta - Sent data to '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort() + "' -> '" + data.toUpperCase() + "'");
 			
 			//Read request from the client
-			resultado = in.readInt();	
+			data = in.readUTF();
+			resultado = Integer.parseInt(data);	
 			System.out.println("   - PagoTarjeta - Received data from '" + socket.getInetAddress().getHostAddress() + ":" + socket.getPort() + "' -> '" + data + "'");		
 			socket.close();
 		}catch (EOFException e) {
