@@ -7,6 +7,14 @@ import es.deusto.ingenieria.sd.eb.server.data.Usuario;
 
 public class UsuarioAssembler {
 	
+private static UsuarioAssembler instance = new UsuarioAssembler();
+	
+	private UsuarioAssembler() {}
+
+	public static UsuarioAssembler getInstance() {
+		return instance;
+	}
+	
 	public List<UsuarioDTO> assemble(List<Usuario> usuarios) 
 	{
 		List<UsuarioDTO> usuariosDTO = new ArrayList<>();

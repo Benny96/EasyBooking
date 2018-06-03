@@ -74,10 +74,7 @@ public class UsuarioAdmin extends UnicastRemoteObject implements IUsuarioAdmin
 	}
 
 	public synchronized List<UsuarioDTO> getUsuariosDTO() {
-		List<UsuarioDTO> usuarios = new ArrayList<UsuarioDTO>();
-		UsuarioAssembler assembler = new UsuarioAssembler();
-		usuarios = assembler.assemble(getUsuarios());
-		return usuarios;
+		return UsuarioAssembler.getInstance().assemble(getUsuarios());
 	}
 	
 	public synchronized List<Usuario> getUsuarios() {
@@ -89,7 +86,7 @@ public class UsuarioAdmin extends UnicastRemoteObject implements IUsuarioAdmin
 		return usuarios;
 	}
 	
-
+	//TODO: Finalmente no se ha utilizado en esta implementación. Se podría tratar de asignar esta función en un futuro.
 	public synchronized void eliminarUsuario(String email) {
 		usuarios.remove(email);
 		System.out.println("* Removing users: " + email);

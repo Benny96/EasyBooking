@@ -39,7 +39,6 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 	@Override
 	public void nuevaReserva(int codigoReserva, String email, String codigoVuelo, Date fecha, ArrayList<PersonaDTO> personas, int pago) throws RemoteException 
 	{
-		//TODO: Test a cambiar.
 		if (pago == 0)
 		{
 			System.out.println("Comprobando saldo de Tarjeta del email "+ email);
@@ -48,7 +47,8 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 				System.out.println("Hay saldo suficiente para operar en la Tarjeta.");
 				System.out.println("* Creando una nueva reserva: " + codigoReserva);
 				Reserva reserva = new Reserva (codigoReserva, email, codigoVuelo, fecha, getPersonas(personas));
-				//TODO: Fracaso estrepitoso de la Update.
+				
+				//TODO: Se ha intentado hacer una actualización de los Usuarios pero no se ha conseguido. Se deja como mejora futura.
 				/*List<Usuario> usuarios = new ArrayList<Usuario>();
 				usuarios = DBManager.getInstance().getUsuarios();
 				for (Usuario aux: usuarios)
@@ -83,7 +83,7 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 				System.out.println("* Creando una nueva reserva: " + codigoReserva);
 				Reserva reserva = new Reserva (codigoReserva, email, codigoVuelo, fecha, getPersonas(personas));
 				
-				//TODO: Fracaso estrepitoso de la Update.
+				//TODO: Se ha intentado hacer una actualización de los Usuarios pero no se ha conseguido. Se deja como mejora futura.
 				/*List<Usuario> usuarios = new ArrayList<Usuario>();
 				usuarios = DBManager.getInstance().getUsuarios();
 				for (Usuario aux: usuarios)
@@ -126,10 +126,7 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 	
 	@Override
 	public List<AeropuertoDTO> getAeropuertosSocketDTO() throws RemoteException {
-		List<AeropuertoDTO> aeropuertos = new ArrayList<AeropuertoDTO>();
-		AeropuertoAssembler assembler = new AeropuertoAssembler();
-		aeropuertos = assembler.assemble(getAeropuertosSocket());
-		return aeropuertos;
+		return AeropuertoAssembler.getInstance().assemble(getAeropuertosSocket());
 	}
 	
 	public synchronized List<Aeropuerto> getAeropuertosSocket() {
@@ -138,10 +135,7 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 
 	@Override
 	public List<ReservaDTO> getReservasDTO() throws RemoteException {
-		List<ReservaDTO> reservas = new ArrayList<ReservaDTO>();
-		ReservaAssembler assembler = new ReservaAssembler();
-		reservas = assembler.assemble(getReservas());
-		return reservas;
+		return ReservaAssembler.getInstance().assemble(getReservas());
 	}
 	
 	public synchronized List<Reserva> getReservas() {
@@ -153,6 +147,7 @@ public class ReservaAdmin extends UnicastRemoteObject implements IReservaAdmin{
 		return reservas;
 	}
 	
+	//TODO: Finalmente no se ha utilizado en esta implementación. Se podría tratar de asignar esta función en un futuro.
 	@Override
 	public void cancelarReserva(int codigoReserva) throws RemoteException {
 		reservas.remove(codigoReserva);

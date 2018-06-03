@@ -7,6 +7,14 @@ import es.deusto.ingenieria.sd.eb.server.data.Reserva;
 
 public class ReservaAssembler {
 	
+private static ReservaAssembler instance = new ReservaAssembler();
+	
+	private ReservaAssembler() {}
+
+	public static ReservaAssembler getInstance() {
+		return instance;
+	}
+	
 	public List<ReservaDTO> assemble(List<Reserva> reservas) 
 	{
 		List<ReservaDTO> reservasDTO = new ArrayList<>();

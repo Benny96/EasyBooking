@@ -15,7 +15,7 @@ Repo con una aerolínea ficticia llamada "EasyBooking". El objetivo de este trab
 	- DAO (+ Factory).
 	- DTO.
 	- Gateway.
-	- Singleton.
+	- Singleton en todos los Assemblers.
 	- Strategy (variación hecha con interfaces en vez de con clases abstractas).
 
 - Uso de herramientas de comunicación entre proyectos (RMI, Sockets).
@@ -40,10 +40,12 @@ AirServer a la carpeta "lib" del EasyBooking_SD_Client.
 
 if (No es la primera ejecución)
 {
+
 	- Ir al Administrador de Tareas (Ctrl + Alt + Supr).
 	- Abrir Procesos en "Más Detalles".
 	- Buscar y Finalizar Tarea en "Procesos en segundo plano" todos los que tengan como nombre:
-		- Java(TM) Platform SE binary.
+	- Java(TM) Platform SE binary.
+
 }
 
 12) Abrir el registry.bat en el EasyBooking_Server.

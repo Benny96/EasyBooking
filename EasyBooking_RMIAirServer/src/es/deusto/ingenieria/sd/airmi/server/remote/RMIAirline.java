@@ -3,16 +3,11 @@ package es.deusto.ingenieria.sd.airmi.server.remote;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
 
 import es.deusto.ingenieria.sd.airmi.server.data.RMIAeropuerto;
 import es.deusto.ingenieria.sd.airmi.server.data.dto.RMIAeropuertoAssembler;
 import es.deusto.ingenieria.sd.airmi.server.data.dto.RMIAeropuertoDTO;
-
-import java.util.Map.Entry;
 
 public class RMIAirline extends UnicastRemoteObject implements IRMIAirline{
 	
@@ -26,10 +21,7 @@ public class RMIAirline extends UnicastRemoteObject implements IRMIAirline{
 
 	@Override
 	public List<RMIAeropuertoDTO> getAeropuertosDTO() throws RemoteException {
-		List<RMIAeropuertoDTO> aeropuertos = new ArrayList<RMIAeropuertoDTO>();
-		RMIAeropuertoAssembler assembler = new RMIAeropuertoAssembler();
-		aeropuertos = assembler.assemble(getAeropuertos());
-		return aeropuertos;
+		return RMIAeropuertoAssembler.getInstance().assemble(getAeropuertos());
 	}
 	
 	public synchronized List<RMIAeropuerto> getAeropuertos() {

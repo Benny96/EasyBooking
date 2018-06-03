@@ -7,6 +7,14 @@ import es.deusto.ingenieria.sd.eb.server.data.Aeropuerto;
 
 public class AeropuertoAssembler {
 	
+	private static AeropuertoAssembler instance = new AeropuertoAssembler();
+	
+	private AeropuertoAssembler() {}
+
+	public static AeropuertoAssembler getInstance() {
+		return instance;
+	}
+	
 	public List<AeropuertoDTO> assemble(List<Aeropuerto> Aeropuertos) 
 	{
 		List<AeropuertoDTO> AeropuertosDTO = new ArrayList<>();

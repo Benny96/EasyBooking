@@ -7,6 +7,14 @@ import es.deusto.ingenieria.sd.airmi.server.data.RMIAeropuerto;
 
 public class RMIAeropuertoAssembler {
 	
+private static RMIAeropuertoAssembler instance = new RMIAeropuertoAssembler();
+	
+	private RMIAeropuertoAssembler() {}
+
+	public static RMIAeropuertoAssembler getInstance() {
+		return instance;
+	}
+	
 	public List<RMIAeropuertoDTO> assemble(List<RMIAeropuerto> RMIAeropuertos) 
 	{
 		List<RMIAeropuertoDTO> RMIAeropuertosDTO = new ArrayList<>();

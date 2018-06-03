@@ -10,6 +10,14 @@ public class PersonaAssembler
 	//TODO: No nos hace falta para gran cosa en las funciones que contemplamos. No obstante, puede ser de interés mantenerlo para
 	//futuras ampliaciones.
 	
+private static PersonaAssembler instance = new PersonaAssembler();
+	
+	private PersonaAssembler() {}
+
+	public static PersonaAssembler getInstance() {
+		return instance;
+	}
+	
 	public List<PersonaDTO> assemble(List<Persona> personas)
 	{
 		List<PersonaDTO> personasDTO = new ArrayList<>();

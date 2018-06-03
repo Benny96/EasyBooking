@@ -37,7 +37,6 @@ public class Vuelos extends JFrame {
 		/*
 		 * Lectura Aeropuertos RMI:
 		 */
-		
 		aeropuertosRMI = EasyBookingController.getInstance().getRMIAeropuertos();
 		for (int i = 0; i < aeropuertosRMI.size(); i++)
 		{
@@ -50,6 +49,9 @@ public class Vuelos extends JFrame {
 		{
 			e1.printStackTrace();
 		}
+		/*
+		 * Lectura Aeropuertos Socket:
+		 */
 		for (int i = 0; i < aeropuertosSocket.size(); i++)
 		{
 			misaeropuertos.add(new Aeropuerto(aeropuertosSocket.get(i).getCodigo(), aeropuertosSocket.get(i).getNombre()));
@@ -84,9 +86,9 @@ public class Vuelos extends JFrame {
 		lblVuelo_2.setBounds(39, 155, 240, 20);
 		contentPane.add(lblVuelo_2);
 		
-		/*JLabel lblVuelo_3 = new JLabel("VUELO Socket: "+ misaeropuertos.get(3).getNombre());
-		lblVuelo_3.setBounds(39, 200, 240, 20);
-		contentPane.add(lblVuelo_3);*/
+		JLabel lblVuelo_3 = new JLabel("VUELO Socket: "+ misaeropuertos.get(3).getNombre());
+		lblVuelo_3.setBounds(39, 200, 300, 20);
+		contentPane.add(lblVuelo_3);
 		
 		JLabel lblVuelo_4= new JLabel("Número total de reservas de los usuarios: "+ numreservas);
 		lblVuelo_4.setBounds(39, 250, 480, 20);
