@@ -9,16 +9,16 @@
 	<property name="classpath" location="bin"/>
 	<property name="export.file" value="EasyBookingManager.jar"/>
 	<property name="server.port" value="1099"/> 
-	<property name="server.IP" value="127.0.0.1"/> 
-	<property name="server.UserAdmin" value="useradmin"/>
+	<property name="server.IP" value="127.0.0.1"/>
 	<property name="server.ReservaAdmin" value="reservaadmin"/>
+	<property name="server.UserAdmin" value="useradmin"/>
 	<property name="policy.file" location="security/java.policy"/>
 	<property name="PayCardServer.IP" value="127.0.0.1"/> 
 	<property name="PayCardServer.port" value="35400"/> 
 	<property name="PayPalServer.IP" value="127.0.0.1"/> 
 	<property name="PayPalServer.port" value="35500"/> 
-	<property name="AirServer.IP" value="127.0.0.1"/>
-	<property name="AirServer.port" value="35600"/>
+	<property name="SocketAirServer.IP" value="127.0.0.1"/>
+	<property name="SocketAirServer.port" value="35600"/>
 	<property name="GoogleAuthServer.IP" value="127.0.0.1"/>
 	<property name="GoogleAuthServer.port" value="35700"/>
 	<property name="FBAuthServer.IP" value="127.0.0.1"/>
@@ -112,14 +112,14 @@
 			<jvmarg value="-Dlog4j.configuration=log4j.properties"/>
         	<arg value="${server.IP}"/>
 	 		<arg value="${server.port}"/>
-			<arg value="${server.UserAdmin}"/>
 			<arg value="${server.ReservaAdmin}"/>
+			<arg value="${server.UserAdmin}"/>
 			<arg value="${PayCardServer.IP}"/>
 			<arg value="${PayCardServer.port}"/>
         	<arg value="${PayPalServer.IP}"/>
 	 		<arg value="${PayPalServer.port}"/>
-        	<arg value="${AirServer.IP}"/>
-	 		<arg value="${AirServer.port}"/>
+        	<arg value="${SocketAirServer.IP}"/>
+	 		<arg value="${SocketAirServer.port}"/>
 			<arg value="${GoogleAuthServer.IP}"/>
 			<arg value="${GoogleAuthServer.port}"/>
 			<arg value="${FBAuthServer.IP}"/>

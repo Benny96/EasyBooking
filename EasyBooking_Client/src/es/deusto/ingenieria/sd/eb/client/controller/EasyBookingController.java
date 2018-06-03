@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import es.deusto.ingenieria.sd.airmi.server.data.dto.RMIAeropuertoDTO;
 import es.deusto.ingenieria.sd.eb.client.gui.Inicio;
 import es.deusto.ingenieria.sd.eb.client.remote.RMIServiceLocator;
 import es.deusto.ingenieria.sd.eb.server.data.dto.PersonaDTO;
@@ -78,6 +79,18 @@ public class EasyBookingController {
 	
 	public void crearNuevoUsuarioFacebook (String email) throws RemoteException, NullPointerException {
 		rsl.getUsuarioService().generarNuevoUsuarioFacebook(email);
+	}
+	
+	public List<RMIAeropuertoDTO> getRMIAeropuertos() {
+		List<RMIAeropuertoDTO> aeropuertos = new ArrayList<>();
+		try {
+			aeropuertos = rsl.getRMIAirlineService().getAeropuertosDTO();
+		} 
+		catch (RemoteException e) 
+		{
+			e.printStackTrace();
+		}
+		return aeropuertos;
 	}
 
 	public void eliminarUsuario (String email) {

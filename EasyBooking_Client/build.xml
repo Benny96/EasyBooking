@@ -5,9 +5,10 @@
    	<property name="build.dir" location="bin"/>
 	<property name="lib.dir" location="lib"/>
 	<property name="rmiregistry.port" value="1099"/>
-	<property name="rmiregistry.IP" value="127.0.0.1"/> 
-	<property name="server.UserAdmin" value="useradmin"/>
+	<property name="rmiregistry.IP" value="127.0.0.1"/>
 	<property name="server.ReservaAdmin" value="reservaadmin"/>
+	<property name="server.UserAdmin" value="useradmin"/>
+	<property name="server.RMIAirline" value="rmiairline"/>
 	<property name="policy.file" location="security/java.policy"/>	
 
 	<path id="classpath">
@@ -31,9 +32,10 @@
 		<java classname="es.deusto.ingenieria.sd.eb.client.controller.EasyBookingController" classpathref="classpath" fork="true">
 			<jvmarg value="-Djava.security.policy=${policy.file}"/>
         	<arg value="${rmiregistry.IP}"/> 
-	 		<arg value="${rmiregistry.port}"/> 
-			<arg value="${server.UserAdmin}"/>
-			<arg value="${server.ReservaAdmin}"/> 
+	 		<arg value="${rmiregistry.port}"/>
+			<arg value="${server.ReservaAdmin}"/>
+			<arg value="${server.UserAdmin}"/>	
+			<arg value="${server.RMIAirline}"/>
         </java>
     </target>
 </project>

@@ -39,9 +39,7 @@ public class Menu extends JFrame {
 		btnReservar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            	System.out.println("12312312312312312312");
             	Vuelos vuelos = new Vuelos(aux);
-            	System.out.println("LALALALALLALALALLA");
             	vuelos.setVisible(true);
             	dispose();
             }

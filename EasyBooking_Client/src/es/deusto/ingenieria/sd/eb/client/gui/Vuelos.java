@@ -3,6 +3,8 @@ package es.deusto.ingenieria.sd.eb.client.gui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -10,6 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import es.deusto.ingenieria.sd.airmi.server.data.dto.RMIAeropuertoDTO;
 import es.deusto.ingenieria.sd.eb.client.controller.EasyBookingController;
 import es.deusto.ingenieria.sd.eb.server.data.Aeropuerto;
 import es.deusto.ingenieria.sd.eb.server.data.dto.UsuarioDTO;
@@ -21,24 +24,24 @@ public class Vuelos extends JFrame {
 	private JFrame vuelo;
 	
 	private int numreservas;
+	private List<RMIAeropuertoDTO> aeropuertosRMI = new ArrayList<RMIAeropuertoDTO>();
+	
+	private ArrayList <Aeropuerto> misaeropuertos = new ArrayList<Aeropuerto>();
 	
 	//TODO: ¿Hace falta Reserva o ReservaDTO?
-	//TODO: Añadir correo del usuario logeado
 	public Vuelos(UsuarioDTO aux) {
 		vuelo = this;
-		/** TODO: AÑADIR LECTURA DE AEROPUERTOS DE GATEWAY**/
-		Aeropuerto a_1= new Aeropuerto("aaaaaa", "AERO1");
-		Aeropuerto a_2= new Aeropuerto("bbbbbb", "AERO2");
-		Aeropuerto a_3= new Aeropuerto("cccccc", "AERO3");
+		/** TODO: AÑADIR LECTURA DE AEROPUERTOS DE GATEWAY Y RMI**/
 		
+		/*
+		 * Lectura Aeropuertos RMI:
+		 */
+		aeropuertosRMI = EasyBookingController.getInstance().getRMIAeropuertos();
+		for (int i = 0; i < aeropuertosRMI.size(); i++)
+		{
+			misaeropuertos.add(new Aeropuerto(aeropuertosRMI.get(i).getCodigo(), aeropuertosRMI.get(i).getNombre()));
+		}
 		
-		
-		System.out.println("1111111111111111111111111111111111");
-		//TODO: Opcion 1 de acceso a BD.
-		//numreservas = DBManager.getInstance().getNumReservas();
-		//TODO: Opcion 2 de acceso a BD.
-		//System.out.println("Numero de reservas: " + numreservas);
-		System.out.println("2222222222222222222222222222222222");
 		//pasajeros.add("Pepita");
 		//pasajeros.add("Juanito");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -48,15 +51,15 @@ public class Vuelos extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblVuelo = new JLabel(a_1.getNombre());
+		JLabel lblVuelo = new JLabel(misaeropuertos.get(0).getNombre());
 		lblVuelo.setBounds(39, 60, 204, 20);
 		contentPane.add(lblVuelo);
 		
-		JLabel lblVuelo_1 = new JLabel(a_2.getNombre());
+		JLabel lblVuelo_1 = new JLabel(misaeropuertos.get(1).getNombre());
 		lblVuelo_1.setBounds(39, 110, 240, 20);
 		contentPane.add(lblVuelo_1);
 		
-		JLabel lblVuelo_2 = new JLabel(a_3.getNombre());
+		JLabel lblVuelo_2 = new JLabel(misaeropuertos.get(2).getNombre());
 		lblVuelo_2.setBounds(39, 155, 240, 20);
 		contentPane.add(lblVuelo_2);
 		
@@ -67,7 +70,7 @@ public class Vuelos extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) 
             {
-            	AddPersonas personas = new AddPersonas(obtenerNumeroReservas(), aux, a_1);
+            	AddPersonas personas = new AddPersonas(obtenerNumeroReservas(), aux, misaeropuertos.get(0));
             	personas.setVisible(true);
             }
         });
@@ -79,7 +82,7 @@ public class Vuelos extends JFrame {
 			 @Override
 	         public void actionPerformed(ActionEvent e) 
 			 {
-				AddPersonas personas = new AddPersonas(obtenerNumeroReservas(), aux, a_2);
+				AddPersonas personas = new AddPersonas(obtenerNumeroReservas(), aux, misaeropuertos.get(1));
 	            personas.setVisible(true);
 			 }
 	     });
@@ -93,7 +96,7 @@ public class Vuelos extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) 
             {
-            	AddPersonas personas = new AddPersonas(obtenerNumeroReservas(), aux, a_3);
+            	AddPersonas personas = new AddPersonas(obtenerNumeroReservas(), aux, misaeropuertos.get(2));
             	personas.setVisible(true);
             }
         });

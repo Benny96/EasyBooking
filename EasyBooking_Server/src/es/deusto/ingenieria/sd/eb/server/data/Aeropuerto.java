@@ -2,19 +2,21 @@ package es.deusto.ingenieria.sd.eb.server.data;
 
 import java.io.Serializable;
 
-
-/**TODO: ESTA CLASE SOBRA DE AQUÍ, HAY QUE PONERLO EN EL GATEWAY*/
-
 public class Aeropuerto implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	private String Nombre;
 	private String Codigo;
+	private String Nombre;
 	
-	
-    public Aeropuerto(String nombre, String codigo) {
+    public Aeropuerto(String codigo, String nombre) {
 		super();
-		Nombre = nombre;
+		Codigo = codigo;
+		Nombre = nombre;	
+	}
+	public String getCodigo() {
+		return Codigo;
+	}
+	public void setCodigo(String codigo) {
 		Codigo = codigo;
 	}
 	public String getNombre() {
@@ -23,10 +25,5 @@ public class Aeropuerto implements Serializable{
 	public void setNombre(String nombre) {
 		Nombre = nombre;
 	}
-	public String getCodigo() {
-		return Codigo;
-	}
-	public void setCodigo(String codigo) {
-		Codigo = codigo;
-	}
+
 }
