@@ -4,7 +4,7 @@ Servidor externo que tendrá las funciones de autenticación de Google de EasyBook
 
 ## Autores
 
-Garikoitz Bereciartua (garibere13) 
-Imanol Echeverría (Echever)
-Anne Idigoras (anneidigoras)
-y yo, Beñat Galdós (Benny96). 
+- Garikoitz Bereciartua (garibere13) 
+- Imanol Echeverría (Echever)
+- Anne Idigoras (anneidigoras)
+- y yo, Beñat Galdós (Benny96). 

@@ -4,7 +4,7 @@ Repo que contendrá las clases del servidor central de EasyBooking. Estas se cone
 
 ## Autores
 
-Garikoitz Bereciartua (garibere13) 
-Imanol Echeverría (Echever)
-Anne Idigoras (anneidigoras)
-y yo, Beñat Galdós (Benny96). 
+- Garikoitz Bereciartua (garibere13) 
+- Imanol Echeverría (Echever)
+- Anne Idigoras (anneidigoras)
+- y yo, Beñat Galdós (Benny96). 
