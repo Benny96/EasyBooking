@@ -12,7 +12,7 @@ import es.deusto.ingenieria.sd.eb.server.data.Persona;
 import es.deusto.ingenieria.sd.eb.server.data.Reserva;
 import es.deusto.ingenieria.sd.eb.server.data.Usuario;
 
-public class DBManager {
+public class DBManager implements IDAO {
 	
 	private static DBManager instance = new DBManager();
 	
@@ -36,7 +36,7 @@ public class DBManager {
 	public static DBManager getInstance() {
 		return instance;
 	}
-	
+	@Override
 	public ArrayList<Persona> getPersonas() 
 	{
 		try 
@@ -66,6 +66,7 @@ public class DBManager {
 		}
 		return this.personasCache;
 	}
+	@Override
 	public ArrayList<Usuario> getUsuarios() 
 	{
 		try 
@@ -95,7 +96,9 @@ public class DBManager {
 		}
 		return this.usuariosCache;
 	}
-	public boolean guardarUsuario(Usuario usuario) {
+	@Override
+	public boolean guardarUsuario(Usuario usuario) 
+	{
 		boolean retorno = false;
 		//Usuario aux;
 		//Object id;
@@ -144,7 +147,9 @@ public class DBManager {
 			}	
 			return retorno;
 	}
-	public boolean guardarPersona(Persona persona) {
+	@Override
+	public boolean guardarPersona(Persona persona) 
+	{
 		boolean retorno = false;
 			try
 			{
@@ -173,7 +178,9 @@ public class DBManager {
 			}	
 			return retorno;
 	}
-	public boolean guardarReserva(Reserva reserva) {
+	@Override
+	public boolean guardarReserva(Reserva reserva) 
+	{
 		boolean retorno = false;
 		try
 		{
@@ -198,7 +205,7 @@ public class DBManager {
 		}		
 		return retorno;
 	}
-
+	@Override
 	public int getNumReservas() 
 	{
 		int numreservas = 0;
