@@ -1,5 +1,7 @@
 # EasyBooking
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Repo con una aerolínea ficticia llamada "EasyBooking". El objetivo de este trabajo es el de empaparnos en diversos conceptos:
 
 - Uso de patrones de Diseño de Software:
