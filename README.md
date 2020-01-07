@@ -62,7 +62,7 @@ if (No es la primera ejecución)
 
 # Autores
 
-- Garikoitz Bereciartua (garibere13) 
-- Imanol Echeverría (Echever)
-- Anne Idigoras (anneidigoras)
-- y yo, Beñat Galdós (Benny96). 
+- Garikoitz Bereciartua ([garibere13](https://github.com/garibere13 "Perfil de GitHub de Gari Bereciartua"))
+- Imanol Echeverría ([Echever](https://github.com/Echever "Perfil de GitHub de Imanol Echeverría"))
+- Beñat Galdós ([Benny96](https://github.com/Benny96 "Perfil de GitHub de Beñat Galdós"))
+- Anne Idigoras ([anneidigoras](https://github.com/anneidigoras "Perfil de GitHub de Anne Idigoras"))
